@@ -26,7 +26,9 @@ font-style: normal;
 .body h2, .section h2{
     color: rgb(253, 177, 0);
     text-shadow: rgb(253, 177, 0) 0em 0em 2em;
-
+    font-family:  'Cinzel', sans-serif;
+text-align: left;
+margin-left: 10%;
 
 }
 
@@ -49,15 +51,16 @@ font-style: normal;
     
 }
 
-.header .logo h1 {
-    font-size: 1.5rem;
-    color: #3d9bff;
+.header .logo .img {
+  align-items: center;
     
 }
 .navbar ul {
     list-style: none;
     display: flex;
     gap: 4em;
+   
+  
 }
 .navbar ul li a {
     text-decoration: none;
@@ -65,6 +68,7 @@ font-style: normal;
     font-weight: 600;
     font-size: .8rem;
     transition: color 0.3s ease;
+ 
     
 }
 .navbar ul li a:hover {
@@ -87,7 +91,9 @@ font-style: normal;
     padding-top: 1.3em;
     margin-top: .1em;
     background: linear-gradient(to top, #181a35ba, #181a3509);
-    border-radius: 10%;;
+    border-radius: 10%;
+    min-width: 150px;
+    max-width: 250px; 
 }
 .navbar .dropdown:hover .dropdown-content {
     display: block;
@@ -96,6 +102,13 @@ font-style: normal;
     color: white;
     text-decoration: none;
 }
+.navbar .dropdown-content a:after {
+    content: '';
+    width: 0; height: 5dpx;
+    display: block;
+    margin-top: 5px;
+    transition: width .2s ease;
+  }
 .navbar .dropdown-content a:hover {
     color: #3d9bff;
 }
@@ -110,6 +123,26 @@ font-style: normal;
     font-size: 0.5rem;
 }
 
+.socialsEnd h2{
+    color: white;
+
+}
+.socialsEnd .social-link {
+    background-color: #3d9bff; /* Cor inicial do botão */
+    border: none;
+    color: white;
+    padding: 0.3em 0.4em;  /* Ajuste o padding para garantir o formato redondo */
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%; /* Garante que o botão seja redondo */
+    width: 35px;  /* Defina uma largura específica */
+    height: 35px; /* Defina uma altura específica igual à largura */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Centraliza o conteúdo */
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    text-decoration: none; 
+}
 
 /* Hero Section */
 .hero {
@@ -141,8 +174,8 @@ font-style: normal;
 
 }
 .hero h2 {
-    font-size: 4rem;
-    margin-bottom: 1em;    
+    font-size: 5rem;
+    margin-bottom: 2em;    
     font-family:  'Cinzel', sans-serif;
 }
 
@@ -152,13 +185,25 @@ font-style: normal;
     padding: 6em 2em;
     
 }
-.section h2{
-    font-family:  'Cinzel', sans-serif;
-}
 
 .about, .games, .products, .updates {
     text-align: center;
 
+}
+
+.connect h2{
+    display:flex;
+    justify-content: center;
+margin-right: 10%;
+font-size: 2em;
+color: white;
+text-shadow: rgb(0, 255, 255) 0em 0em 2em;
+  
+}
+.socialsEnd{
+    display:flex;
+    gap: 1.3em;
+    justify-content: center;
 }
 
 .about .about-content, .games-gallery, .products-gallery {
