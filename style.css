@@ -1,0 +1,384 @@
+/* Estilo Global */
+body {
+  
+    margin: 0;
+    padding: 0;
+    background-color: #181a35;
+    color: white;
+    font-family: 'Titiillium Web', sans-serif;
+}
+  .header {
+  font-family:  'Cinzel', sans-serif;
+}
+@font-face {
+    font-family: 'Titiillium Web';
+    src: url(Font/TitilliumWeb-Regular.ttf);
+    font-weight:normal;
+font-style: normal;
+}
+@font-face {
+    font-family:"Cinzel" ;
+    src: url(Font/Cinzel-VariableFont_wght.ttf);
+    font-weight:normal;
+    font-style: normal;
+    
+}
+.body h2, .section h2{
+    color: rgb(253, 177, 0);
+    text-shadow: rgb(253, 177, 0) 0em 0em 2em;
+
+
+}
+
+/* Header */
+.header {
+    padding: 1.5em 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right,#181a35ad, #1a1a1be9, #181a35ad);/* Adicionando opacidade para o fade */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    height: .1em;
+    z-index: 100;
+    transition: background-color 0.3s ease; /* Suaviza a transição da cor */
+    
+}
+
+.header .logo h1 {
+    font-size: 1.5rem;
+    color: #3d9bff;
+    
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 4em;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #b5b5b5;
+    font-weight: 600;
+    font-size: .8rem;
+    transition: color 0.3s ease;
+    
+}
+.navbar ul li a:hover {
+    color: #f9f9f9;
+    text-shadow: rgb(255, 255, 255) 0em 0em 2em;
+}
+
+
+/* Dropdown */
+.navbar .dropdown {
+    position: relative;
+}
+.navbar .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1f1f1f4e;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 1.05em;
+    padding-top: 1.3em;
+    margin-top: .1em;
+    background: linear-gradient(to top, #181a35ba, #181a3509);
+    border-radius: 10%;;
+}
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+.navbar .dropdown-content a {
+    color: white;
+    text-decoration: none;
+}
+.navbar .dropdown-content a:hover {
+    color: #3d9bff;
+}
+
+/* Redes Sociais */
+.socials {
+    display: flex;
+    gap: 1em;
+}
+.social-link {
+    color: #3d9bff;
+    font-size: 0.5rem;
+}
+
+
+/* Hero Section */
+.hero {
+    background: url('Image/bg.jpg') no-repeat center center/cover;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 2em;
+    position: relative;
+  
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+    z-index: 1;
+    background: linear-gradient(to top, #181a35,#181a3508, #181a3500);
+}
+
+.hero-text {
+    z-index: 2;
+
+}
+.hero h2 {
+    font-size: 4rem;
+    margin-bottom: 1em;    
+    font-family:  'Cinzel', sans-serif;
+}
+
+
+/* Sections */
+.section {
+    padding: 6em 2em;
+    
+}
+.section h2{
+    font-family:  'Cinzel', sans-serif;
+}
+
+.about, .games, .products, .updates {
+    text-align: center;
+
+}
+
+.about .about-content, .games-gallery, .products-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    
+   
+}
+ .about .about-content .text {
+    flex: 1;
+    max-width: 500px;
+  
+}
+.about .about-content .image
+{
+    filter: drop-shadow(1px 10px 4px #302000);
+}
+.game-card, .product-card {
+   
+    min-width: 100%; 
+    padding: 20px;
+    text-align: start;
+    
+    flex: 0 0 100%; 
+    margin-top: 15px;
+  
+    box-sizing: border-box; /* Inclui padding na largura total */
+
+}
+
+.game-card img, .product-card img {
+    margin-left: 5%;
+    max-width: 400px;
+    border-radius: 10px;
+    
+  
+}
+.game-content, .product-content {
+    margin-left: 5%;
+    margin-top: 15px;
+    
+}
+.game-card h3, .product-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1em;
+}
+.game-card p, .product-card p {
+  
+    font-size: 1rem;
+  min-width: 100%;
+    margin-bottom: 1em;
+    
+}
+
+.products-slider,.games-slider {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #f9f9f900;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 1);   
+  
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5em 0.6em;
+    width: 30px;  /* Defina uma largura específica */
+    height: 30px; 
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Centraliza o conteúdo */
+    cursor: pointer;
+    z-index: 10;
+    margin-top: -2.5%;
+    margin-right:  1%;
+}
+button.prev {
+    right: 16%;
+}
+
+button.next {
+    right: 12%;
+}
+
+/* Recent Updates */
+.update-cards {
+    display: flex;
+    flex-direction: column; /* Alinha os cartões verticalmente */
+    justify-content: flex-start;
+    gap: 1.5em;
+    padding: 2em 20px; /* Adicionando margin interna para esquerda e direita */
+    width: calc(100% - 60px); /* Garantindo que o conteúdo ocupe a largura com margem */
+    margin: 0 auto; /* Centralizando o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+}
+.update-card {
+    display: flex;
+    align-items: center;
+    background-color: #d3d3d30a;
+    width: 80%; 
+    height: 100px;
+    padding: 0.5em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    
+}
+.update-card:hover {
+    transform: translateX(+20px);   
+    background-color: rgba(189, 189, 189, 0.17)
+  
+}
+
+.update-line {
+   
+    height: 100%;
+    background-color: transparent;
+    border-left: 5px solid #636363;
+    margin-right: 1em;
+    transition: border-left 0.3s ease;
+  
+
+}
+.update-card:hover .update-line {
+    border-left: 5px solid #3d9bff;
+   
+    box-shadow: 0 0 15px 5px rgba(0, 123, 255, 0.8);
+}
+.update-content {
+    color: white;
+    width: 100%;
+}
+.update-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+}
+.update-card p {
+    color: #585858;
+    font-size: 1rem;
+}
+.update-card a {
+    color: #3d9bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+footer p {
+    font-size: 1rem;
+    color: #888;
+}
+button, .cta-btn {
+    background-color: #3d9bff; /* Cor inicial do botão */
+    border: none;
+    color: white;
+    padding: .8em 1.2em;
+    font-size: .9rem;
+    cursor: pointer;
+    border-radius: 4%;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    text-decoration: none; 
+}
+
+
+/* Hover - Efeito Outer Glow */
+button:hover, .cta-btn:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px 5px rgba(0, 149, 255, 0.8); 
+    background-color:rgb(0, 149, 255); 
+
+}
+
+.social-link:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px 5px rgba(0, 149, 255, 0.8); 
+    background-color:rgba(0, 149, 255, 0.2); 
+}
+.social-link {
+    background-color: #3d9bff; /* Cor inicial do botão */
+    border: none;
+    color: white;
+    padding: 0.3em 0.4em;  /* Ajuste o padding para garantir o formato redondo */
+    font-size: .8rem;
+    cursor: pointer;
+    border-radius: 50%; /* Garante que o botão seja redondo */
+    width: 25px;  /* Defina uma largura específica */
+    height: 25px; /* Defina uma altura específica igual à largura */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Centraliza o conteúdo */
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    text-decoration: none; 
+}
+/* Se quiser um efeito diferente para cada cor de botão, use classes adicionais, como: */
+.button-blue:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 123, 255, 0.8); /* Glow azul */
+
+}
+
+.button-red:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.8); /* Glow vermelho */
+}

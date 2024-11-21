@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShadowProfile - Transformando ideias em experiências de jogo.">
+    <title>ShadowProfile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- Font Awesome for Social Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <h1>ShadowProfile</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                <li class="dropdown">
+                    <a href="#">Mais <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#updates">Notices</a></li>
+                        <li><a href="#news">News</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="socials">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter fa"></i></a> <!-- Corrigido para Twitter -->
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+               <img src="Image/ShadowText.png" alt="ShadowProfile Logo">
+            <p>Transformamos ideias em experiências inesquecíveis.</p>
+            <a href="#about" class="cta-btn">Saiba Mais</a>
+        </div>
+    </section>
+
+<!-- About Section -->
+<section id="about" class="section about">
+    <div class="about-content">
+        <div class="text">
+            <h2>Sobre Nós</h2>
+            <p>ShadowProfile é um estúdio criativo dedicado à inovação no universo dos games. Criamos experiências interativas únicas, com um foco forte na qualidade e imersão.</p>
+        </div>
+        <div class="image">
+            <img src="Image/justlogo (1).png" alt="Imagem Sobre">
+        </div>
+    </div>
+ 
+</section>
+
+<!-- Jogos Feitos Section -->
+<section id="games" class="section games">
+    <h2>Our Products</h2>
+    <div class="games-slider">
+        <div class="slider-wrapper">
+            <div  class="game-card"style="background-image: url('/Image/LibraryHero.jpg');">
+                <img src="/Image/Royal Wars C_1-01.png" alt="Imagem do Jogo">
+                <div class="game-content">
+                    <h3>Royal Wars - Farm TD</h3>
+                    <p>Descrição do jogo , focando nas principais características e experiências oferecidas.</p>
+                      <!--button see more-->
+                      <button class="see-more-button">See More</button>
+                </div>
+            </div>
+            <div class="game-card"style="background-image: url('https://via.placeholder.com/1920x1080/FF4733');">
+                <img src="https://via.placeholder.com/400x250" alt="Imagem do Jogo">
+                <div class="game-content">
+                    <h3>Jogo 2</h3>
+                    <p>Descrição do jogo 2, destacando seus recursos e impacto na comunidade gamer.</p>
+                      <!--button see more-->
+                </div>
+            </div>
+            <div class="game-card"style="background-image: url('https://via.placeholder.com/1920x1080/FF4733');">
+                <img src="https://via.placeholder.com/400x250" alt="Imagem do Jogo">
+                <div class="game-content">
+                    <h3>Jogo 3</h3>
+                    <p>Descrição do jogo 3, destacando seus recursos e impacto na comunidade gamer.</p>
+                      <!--button see more-->
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Slider Controls -->
+        <button class="prev" onclick="moveGameSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveGameSlide(1)">&#10095;</button>
+    </div>
+</section>
+
+<!-- Produtos Desenvolvidos Section -->
+<!-- <section id="products" class="section products">
+    <h2>Another Slider</h2>
+    <div class="products-slider">
+        <div class="slider-wrapper">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/400x250" alt="Imagem do Produto">
+                <div class="product-content">
+                    <h3>Produto 1</h3>
+                    <p>Descrição do produto 1, detalhando seus benefícios e como ele transforma a experiência do usuário.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/400x250" alt="Imagem do Produto">
+                <div class="product-content">
+                    <h3>Produto 2</h3>
+                    <p>Descrição do produto 2, com ênfase nas inovações que ele trouxe para o mercado.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/400x250" alt="Imagem do Produto">
+                <div class="product-content">
+                    <h3>Produto 3</h3>
+                    <p>Descrição do produto 3, com destaque para a usabilidade e inovação.</p>
+                </div>
+            </div>
+        </div>
+      
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</section> -->
+
+<!-- Recent Updates Section -->
+<section id="updates" class="section updates">
+    <h2>Recent Updates</h2>
+    <div class="update-cards">
+        <div class="update-card" onclick="window.location.href='https://exemplo.com/atualizacao1';">
+            <div class="update-line"></div>
+            <div class="update-content">
+                <h3>Atualização 1</h3>
+                <p>Novos recursos para o nosso jogo, com melhorias significativas de jogabilidade.</p>
+            </div>
+        </div>
+        
+        <div class="update-card" onclick="window.location.href='https://exemplo.com/atualizacao2';">
+            <div class="update-line"></div>
+            <div class="update-content">
+                <h3>Atualização 2</h3>
+                <p>Adicionamos novos mapas e novos modos de jogo para aumentar a imersão.</p>
+            </div>
+        </div>
+    </div>
+ 
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ShadowProfile. Todos os direitos reservados.</p>
+    </footer>
+
+<script>
+ let currentSlide = 0;
+
+function moveSlide(direction) {
+    const sliderWrapper = document.querySelector(".products-slider .slider-wrapper");
+    const slides = document.querySelectorAll(".products-slider .product-card");
+    const totalSlides = slides.length;
+
+    // Update the current slide index
+    currentSlide += direction;
+
+    // Loop back to the first/last slide if at the end/start
+    if (currentSlide >= totalSlides) currentSlide = 0;
+    if (currentSlide < 0) currentSlide = totalSlides - 1;
+
+    // Move the slider
+    sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+    
+}
+</script>
+<script>
+let currentGameSlide = 0;
+
+function moveGameSlide(direction) {
+    const gameSliderWrapper = document.querySelector(".games-slider .slider-wrapper");
+    const gameSlides = document.querySelectorAll(".games-slider .game-card");
+    const totalGameSlides = gameSlides.length;
+
+    // Atualiza o índice do slide atual
+    currentGameSlide += direction;
+
+    // Faz o loop voltar para o primeiro/último slide
+    if (currentGameSlide >= totalGameSlides) currentGameSlide = 0;
+    if (currentGameSlide < 0) currentGameSlide = totalGameSlides - 1;
+
+    // Move o slider
+    const slideWidth = gameSlides[0].offsetWidth; // Calcula largura real de um slide
+    gameSliderWrapper.style.transform = `translateX(-${currentGameSlide * slideWidth}px)`;
+}
+</script>
+
+</body>
+
+</html>
