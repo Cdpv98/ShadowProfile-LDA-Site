@@ -21,23 +21,22 @@
                 <li><a href="">Home</a></li>
                 <li><a href="">Services</a></li>
                 <li class="dropdown">
-                    <a href="#">Games <i class="fas fa-chevron-down"></i></a>
+                    <a href="#" class="dropdown-toggle" data-dropdown>Games <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-content">
                         <li><a href="">Royal Wars - Farm TD</a></li>
                         <li><a href="">Pepe Pinguino</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+                    <a href="#" class="dropdown-toggle" data-dropdown>Products <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-content">
                         <li><a href="">HierarchyS</a></li>
                         <li><a href="">Lighting Occluder</a></li>
                         <li><a href="">UnDuplicate</a></li>
                     </ul>
                 </li>
-              
                 <li class="dropdown">
-                    <a href="#">About <i class="fas fa-chevron-down"></i></a>
+                    <a href="#" class="dropdown-toggle" data-dropdown>About <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-content">
                         <li><a href="">Our Team</a></li>
                         <li><a href="">Careers</a></li>
@@ -61,25 +60,29 @@
         </div>
     </section>
 
+
 <!-- About Section -->
 <section id="about" class="section about">
     <div class="about-content">
         <div class="text">
-            <h2>Sobre Nós</h2>
-            <p>ShadowProfile é um estúdio criativo dedicado à inovação no universo dos games. Criamos experiências interativas únicas, com um foco forte na qualidade e imersão.</p>
+            <h2>Who we are</h2>
+            <p>ShadowProfile Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                ,when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
         <div class="image">
             <img src="Image/justlogo (1).png" alt="Imagem Sobre">
         </div>
     </div>
- 
 </section>
+
 
 <!-- Jogos Feitos Section -->
 <section id="games" class="section games">
+
     <h2>Our Products</h2>
     <div class="games-slider">
         <div class="slider-wrapper">
+
             <div  class="game-card"style="background-image: url('/Image/LibraryHero.jpg');">
                 <img src="/Image/Royal Wars C_1-01.png" alt="Imagem do Jogo">
                 <div class="game-content">
@@ -90,6 +93,7 @@
                       <button class="see-more-button">On Steam <i class="fa-brands fa-steam"></i></button>
                 </div>
             </div>
+            
             <div class="game-card"style="background-image: url('https://via.placeholder.com/1920x1080/FF4733');">
                 <img src="https://via.placeholder.com/400x250" alt="Imagem do Jogo">
                 <div class="game-content">
@@ -100,6 +104,7 @@
                       <button class="see-more-button">On Steam <i class="fa-brands fa-steam"></i></button>
                 </div>
             </div>
+            
             <div class="game-card"style="background-image: url('https://via.placeholder.com/1920x1080/FF4733');">
                 <img src="https://via.placeholder.com/400x250" alt="Imagem do Jogo">
                 <div class="game-content">
@@ -110,14 +115,14 @@
                       <button class="see-more-button">On Steam <i class="fa-brands fa-steam"></i></button>
                 </div>
             </div>
-        </div>
-        </div>
+       </div>
+    </div>
         <!-- Slider Controls -->
         <button class="prev" onclick="moveGameSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveGameSlide(1)">&#10095;</button>
-    </div>
+        <button class="next" onclick="moveGameSlide(1)">&#10095;</button>   
+    
 </section>
-
+<div class="spacer"><br></div>
 <!-- Produtos Desenvolvidos Section -->
 <section id="products" class="section products">
     <h2>Directly Involved</h2>
@@ -164,7 +169,7 @@
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
 </section>
-
+<div class="spacer"><br></div>
 <!-- Recent Updates Section -->
 <section id="updates" class="section updates">
     <h2>In the press</h2>
@@ -194,7 +199,7 @@
     </div>
 </div>
 </section>
-
+<div class="spacer"><br></div>
 <!--Connect With us Section-->
 <section id="connect" class="section connect">
     <h2>Connect with us</h2>
@@ -252,6 +257,35 @@ function moveGameSlide(direction) {
 }
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const dropdownToggles = document.querySelectorAll("[data-dropdown]");
+
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener("click", event => {
+            event.preventDefault();
+            const dropdown = toggle.closest(".dropdown");
+            dropdown.classList.toggle("active");
+
+            // Fechar outros dropdowns
+            document.querySelectorAll(".dropdown").forEach(item => {
+                if (item !== dropdown) {
+                    item.classList.remove("active");
+                }
+            });
+        });
+    });
+
+    // Fechar o dropdown ao clicar fora
+    document.addEventListener("click", event => {
+        if (!event.target.closest(".dropdown")) {
+            document.querySelectorAll(".dropdown").forEach(dropdown => {
+                dropdown.classList.remove("active");
+            });
+        }
+    });
+});
+</script>
 </body>
 
 </html>

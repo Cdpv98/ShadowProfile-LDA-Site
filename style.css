@@ -3,12 +3,18 @@ body {
   
     margin: 0;
     padding: 0;
-    background-color: #181a35;
-    color: white;
+
+
+  background-color: #181a35; 
+  background-position: left top;
+  background-repeat: no-repeat;
+    color: #cbe3ffbf;
     font-family: 'Titiillium Web', sans-serif;
+    background: linear-gradient(to top, #181a3581,#181a3581, #181a3581), url('Image/bg_section.jpg') repeat, center; 
 }
+
   .header {
-  font-family:  'Cinzel', sans-serif;
+  font-family:  'Titiillium Web', sans-serif;
 }
 @font-face {
     font-family: 'Titiillium Web';
@@ -23,12 +29,20 @@ font-style: normal;
     font-style: normal;
     
 }
+@font-face {
+    font-family:"Alegreya" ;
+    src: url(Font/Alegreya-Bold.ttf);
+    font-weight:normal;
+    font-style: normal;
+    
+}
 .body h2, .section h2{
-    color: rgb(253, 177, 0);
-    text-shadow: rgb(253, 177, 0) 0em 0em 2em;
-    font-family:  'Cinzel', sans-serif;
+    color: #ff7a20;
+    text-shadow: #ff0000 0em 0em 1.3em;
+    font-family:  'Alegreya', sans-serif;
 text-align: left;
 margin-left: 10%;
+font-size: 2.5em;
 
 }
 
@@ -51,8 +65,8 @@ margin-left: 10%;
     
 }
 
-.header .logo .img {
-  align-items: center;
+.header .logo {
+margin-top: .5%;
     
 }
 .navbar ul {
@@ -86,16 +100,20 @@ margin-left: 10%;
     position: absolute;
     background-color: #1f1f1f4e;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    padding: 1.05em;
-    padding-top: 1.3em;
-    margin-top: .1em;
-    background: linear-gradient(to top, #181a35ba, #181a3509);
-    border-radius: 10%;
+    z-index: -1;
+    margin-top: 1%;
+    padding: 1.3em;
+    padding-top: 1.5em;
+margin-top: 10px;
+    background: linear-gradient(to bottom, #0c0d1ccf, #0c0d1ccf);
+border-radius: 2%;
     min-width: 150px;
     max-width: 250px; 
 }
-.navbar .dropdown:hover .dropdown-content {
+/* .navbar .dropdown:hover .dropdown-content {
+    display: block;
+} */
+.dropdown.active .dropdown-content {
     display: block;
 }
 .navbar .dropdown-content a {
@@ -113,6 +131,7 @@ margin-left: 10%;
     color: #3d9bff;
 }
 
+.show {display:block;}
 /* Redes Sociais */
 .socials {
     display: flex;
@@ -183,19 +202,27 @@ margin-left: 10%;
 /* Sections */
 .section {
     padding: 6em 2em;
-    
+    position: relative;
+
+}
+.spacer{
+    margin-bottom: 2em;
 }
 
 .about, .games, .products, .updates {
     text-align: center;
 
 }
+.about {
+
+    background: linear-gradient(to top,#181a3500, #181a3500,#181a35 );
+}
 
 .connect h2{
     display:flex;
     justify-content: center;
 margin-right: 10%;
-font-size: 2em;
+font-size: 1.5em;
 color: white;
 text-shadow: rgb(0, 255, 255) 0em 0em 2em;
   
@@ -216,29 +243,38 @@ text-shadow: rgb(0, 255, 255) 0em 0em 2em;
 }
  .about .about-content .text {
     flex: 1;
-    max-width: 500px;
+    max-width: 550px;
+    text-align: justify;
+  text-justify: inter-word;
+    
   
 }
+.about h2{
+    margin-left: 0%;
+}
+
 .about .about-content .image
 {
-    filter: drop-shadow(1px 10px 4px #302000);
+    filter: drop-shadow(1px 10px 4px #05216d);
+    margin-top: 5%;
 }
 .game-card, .product-card {
    
-    min-width: 100%; 
-    padding: 20px;
+    max-width: 100%; 
+    padding: 30px;
     text-align: start;
-    
     flex: 0 0 100%; 
-    margin-top: 15px;
-  
+
     box-sizing: border-box; /* Inclui padding na largura total */
 
 }
 
+
+
+
 .game-card img, .product-card img {
-    margin-left: 5%;
-    max-width: 400px;
+    margin-top: 1%;
+    max-width: 300px;
     border-radius: 10px;
     
   
@@ -267,7 +303,7 @@ text-shadow: rgb(0, 255, 255) 0em 0em 2em;
     overflow: hidden;
     background-color: #f9f9f900;
     border-radius: 10px;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 1);   
+    box-shadow: 0px 15px 30px -15px rgba(7, 33, 128, 0.652);   
   
 }
 
