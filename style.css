@@ -10,7 +10,7 @@ body {
   background-repeat: no-repeat;
     color: #cbe3ffbf;
     font-family: 'Titiillium Web', sans-serif;
-    background: linear-gradient(to top, #181a3581,#181a3581, #181a3581), url('Image/bg_section.jpg') repeat, center; 
+    background: linear-gradient(to top, #181a35f8,#181a3581, #181a3581), url('Image/bg_section.jpg') repeat, center; 
 }
 
   .header {
@@ -52,7 +52,7 @@ font-size: 2.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right,#181a35ad, #1a1a1be9, #181a35ad);/* Adicionando opacidade para o fade */
+    background: linear-gradient(to right,#181a35ad, #1a1a1be9, #181a35ad);
     position: fixed;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@ font-size: 2.5em;
     width: 90%;
     height: .1em;
     z-index: 100;
-    transition: background-color 0.3s ease; /* Suaviza a transição da cor */
+    transition: background-color 0.3s ease; 
     
 }
 
@@ -80,35 +80,41 @@ margin-top: .5%;
     text-decoration: none;
     color: #b5b5b5;
     font-weight: 600;
-    font-size: .8rem;
+    font-size: .75rem;
+    letter-spacing: 3px;
     transition: color 0.3s ease;
  
     
 }
 .navbar ul li a:hover {
     color: #f9f9f9;
-    text-shadow: rgb(255, 255, 255) 0em 0em 2em;
+    text-shadow: rgb(255, 255, 255) 0rem 0rem 2rem;
 }
 
 
 /* Dropdown */
 .navbar .dropdown {
     position: relative;
+    
+ 
 }
+
 .navbar .dropdown .dropdown-content {
     display: none;
     position: absolute;
+    text-overflow: clip;
     background-color: #1f1f1f4e;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: -1;
     margin-top: 1%;
-    padding: 1.3em;
-    padding-top: 1.5em;
-margin-top: 10px;
-    background: linear-gradient(to bottom, #0c0d1ccf, #0c0d1ccf);
-border-radius: 2%;
-    min-width: 150px;
-    max-width: 250px; 
+    padding: 1rem;
+    padding-top: 1.5rem;
+    margin-top: 13px;
+    background: linear-gradient(to bottom, #1a1a1bc5, #1a1a1bc5);
+    border-radius: 3%;
+width: 180px;
+   
+    letter-spacing: 2px;
+   
 }
 /* .navbar .dropdown:hover .dropdown-content {
     display: block;
@@ -131,14 +137,12 @@ border-radius: 2%;
     color: #3d9bff;
 }
 
-.show {display:block;}
-/* Redes Sociais */
 .socials {
     display: flex;
     gap: 1em;
 }
 .social-link {
-    color: #3d9bff;
+    color: #4d4d4d38;
     font-size: 0.5rem;
 }
 
@@ -147,18 +151,17 @@ border-radius: 2%;
 
 }
 .socialsEnd .social-link {
-    background-color: #3d9bff; /* Cor inicial do botão */
-    border: none;
+    background-color: #14335377; 
     color: white;
-    padding: 0.3em 0.4em;  /* Ajuste o padding para garantir o formato redondo */
-    font-size: 1.5rem;
+    padding: 0.3em 0.4em; 
+    font-size: 1.4rem;
     cursor: pointer;
-    border-radius: 50%; /* Garante que o botão seja redondo */
-    width: 35px;  /* Defina uma largura específica */
-    height: 35px; /* Defina uma altura específica igual à largura */
+    border-radius: 50%; 
+    width: 30px;  
+    height: 30px;
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo */
-    align-items: center; /* Centraliza o conteúdo */
+    justify-content: center;
+    align-items: center; 
     transition: box-shadow 0.3s ease, transform 0.2s ease;
     text-decoration: none; 
 }
@@ -264,7 +267,6 @@ text-shadow: rgb(0, 255, 255) 0em 0em 2em;
     padding: 30px;
     text-align: start;
     flex: 0 0 100%; 
-
     box-sizing: border-box; /* Inclui padding na largura total */
 
 }
@@ -274,6 +276,7 @@ text-shadow: rgb(0, 255, 255) 0em 0em 2em;
 
 .game-card img, .product-card img {
     margin-top: 1%;
+    margin-left:5%;
     max-width: 300px;
     border-radius: 10px;
     
@@ -291,7 +294,8 @@ text-shadow: rgb(0, 255, 255) 0em 0em 2em;
 .game-card p, .product-card p {
   
     font-size: 1rem;
-  min-width: 100%;
+  width: 50%;
+  
     margin-bottom: 1em;
     
 }
@@ -443,7 +447,7 @@ button:hover, .cta-btn:hover{
     border: none;
     color: white;
     padding: 0.3em 0.4em;  /* Ajuste o padding para garantir o formato redondo */
-    font-size: .8rem;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 50%; /* Garante que o botão seja redondo */
     width: 25px;  /* Defina uma largura específica */
