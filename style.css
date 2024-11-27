@@ -45,7 +45,7 @@ font-size: 2em;
 }
 
 p{
-    font-size: 1.2em;
+    font-size: 18px;
 }
 
 .header {
@@ -362,7 +362,7 @@ font-size: 15px;
 }
 .game-card p, .product-card p {
   
-    font-size: 1rem;
+    font-size: 1.1rem;
   width: 50%;
   
     margin-bottom: 1em;
@@ -508,7 +508,7 @@ text-align: start;
 }
 .update-card p, .careers-card p {
     color: #cbe3ffbf;
-    font-size: 1rem;
+    font-size: 16px;
     
 }
 
@@ -521,7 +521,7 @@ footer {
     padding: 2em;
 }
 footer p {
-    font-size: 1rem;
+    font-size: 18px;
     color: #cbe3ffbf;
 }
 
@@ -825,7 +825,7 @@ border-top-right-radius: 20px;
 }
 
 .members-text {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     color: #cbe3ffbf;
     padding: 7%;
@@ -837,19 +837,19 @@ border-top-right-radius: 20px;
 
 .members-skill-title{
 width: 100%;
-font-size:  15px;
+font-size:  18px;
 text-align: start;
 margin-left: 10%;
 }
 
 .members-skill-name{
     width: 160px;
-font-size:  15px;
+font-size:  16px;
 text-align: start;
 }
 .review-skill{
     width: 100px;
-font-size:  15px;
+font-size:  18px;
 text-align: start;
 }
 
@@ -913,7 +913,7 @@ text-align: start;
     border: none;
     padding: 8px 14px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 18px;
     border-radius: 100%;
     margin: 10px;
 }
