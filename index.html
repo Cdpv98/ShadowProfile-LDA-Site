@@ -1,62 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ShadowProfile - Transformando ideias em experiências de jogo.">
+    <meta name="description" content="ShadowProfile ">
     <title>ShadowProfile</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <!-- Font Awesome for Social Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+   <!--  Header -->
     <header class="header">
         <div class="logo">
            <img class="img" src="Image/Shadow.png">
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">SERVICES</a></li>
+                <li><a href="https://www.shadowprofile.pt/">HOME</a></li>
+                <li><a href="Services.html">SERVICES</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-dropdown>GAMES <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-content">
-                        <li><a href="">Royal Wars - Farm TD</a></li>
-                        <li><a href="">Pepe Pinguino</a></li>
+                        <li><a href="RoyalWars.html">Royal Wars - Farm TD</a></li>
+              
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-dropdown>PRODUCTS <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-content">
-                        <li><a href="">HierarchyS</a></li>
-                        <li><a href="">Lighting Occluder</a></li>
-                        <li><a href="">UnDuplicate</a></li>
+                        <li><a href="HierarchyS.html">HierarchyS</a></li>
+                        <li><a href="LightingOccluder.html">Lighting Occluder</a></li>
+                        <li><a href="UnDuplicate.html">UnDuplicate</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-dropdown>ABOUT <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-content">
-                        <li><a href="">Our Team</a></li>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">Contacts</a></li>
+                        <li><a href="OurTeam.html">Our Team</a></li>
+                        <li><a href="Careers.html">Careers</a></li>
+                        <li><a href="Contacts.html">Contacts</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
         <div class="socials">
-            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter fa"></i></a> <!-- Corrigido para Twitter -->
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ShadowProfileLDA" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/ShadowProfilePT" class="social-link"><i class="fa-brands fa-x-twitter fa"></i></a> 
+            <a href="https://www.instagram.com/shadowprofilelda/" class="social-link"><i class="fab fa-instagram"></i></a>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text">
-               <img src="Image/ShadowText.png" alt="ShadowProfile Logo">
-            <p>Transformamos ideias em experiências inesquecíveis.</p>
+               <img class ="image" src="Image/ShadowText.png" alt="ShadowProfile Logo">
         </div>
     </section>
 
@@ -66,8 +64,10 @@
     <div class="about-content">
         <div class="text">
             <h2>Who we are</h2>
-            <p>ShadowProfile Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                ,when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>We are a game development company combining creativity and technology to craft innovative experiences. 
+                We offer services such as Unity 3D and Unreal Engine development, NFT games, and augmented and virtual reality experiences for platforms like Apple Vision Pro and Meta Quest.
+                 With a passionate and dedicated team, we focus on creating games that blend compelling storytelling, dynamic gameplay, and stunning visuals.
+                 We thrive on the passion for transforming ideas into unique digital adventures.</p>
         </div>
         <div class="image">
             <img src="Image/justlogo (1).png" alt="Imagem Sobre">
@@ -89,52 +89,52 @@
                     <h3>Royal Wars - Farm TD</h3>
                     <p>Royal Wars: Farm TD is a free-to-play tower defense game where strategy meets luck. Place randomly selected towers, merge them to unlock higher tiers, and defend your kingdom through multiple levels. Plant crystals, manage resources, and prepare for epic battles.</p>
                       <!--button see more-->
-                      <button class="see-more-button">See More</button>
-                      <button class="see-more-button" onclick="location.href='https://store.steampowered.com/app/1679470/Royal_Wars_Farm_TD/';">On Steam <i class="fa-brands fa-steam"></i></button>
+                      <a class="see-more-button" href="Games/RoyalWars.html">See More</a>
+                      <a class="see-more-button" href="https://store.steampowered.com/app/1679470/Royal_Wars_Farm_TD/">On Steam <i class="fa-brands fa-steam"></i></a>
                 </div>
             </div>
             
-            <div class="game-card"style="background-image: url('/Image/ProductBg.png');">
-                <img src="/Image/Royal Wars C_1-01.png" alt="Imagem do Jogo">
+            <div class="game-card"style="background-image: url('/Image/products_BG.jpg');">
+                <img src="/Image/HierarchyS/Header.webp" alt="Imagem do Jogo">
                 <div class="game-content">
                     <h3>HierarchyS</h3>
                     <p>Improve your experience developing in Unity with the tools provided by HierarchyS.</p>
                       <!--button see more-->
-                      <button class="see-more-button">See More</button>
-                      <button class="see-more-button">On Unity Store <i class="fa-brands fa-unity"></i></button>
+                      <a class="see-more-button" href="HierarchyS.html">See More</a>
+                      <a class="see-more-button"href="https://assetstore.unity.com/packages/tools/utilities/hierarchys-296499">On Unity Store <i class="fa-brands fa-unity"></i></a>
                 </div>
             </div>
             
-            <div class="game-card"style="background-image: url('/Image/ProductBg.png');">
-                <img src="/Image/Royal Wars C_1-01.png" alt="Imagem do Jogo">
+            <div class="game-card"style="background-image: url('/Image/products_BG.jpg');">
+                <img src="/Image/LightingOccluder/header.webp" alt="Imagem do Jogo">
                 <div class="game-content">
                     <h3>Lighting Occluder</h3>
                     <p>Improve performance by occluding light in your game.</p>
                       <!--button see more-->
-                      <button class="see-more-button">See More</button>
-                      <button class="see-more-button">On Unity Store <i class="fa-brands fa-unity"></i></button>
+                      <a class="see-more-button" href="LightingOccluder.html">See More</a>
+                      <a class="see-more-button"href="https://assetstore.unity.com/packages/tools/integration/lighting-occluder-298839">On Unity Store <i class="fa-brands fa-unity"></i></a>
                 </div>
             </div>
 
-            <div class="game-card"style="background-image: url('/Image/ProductBg.png');">
-                <img src="/Image/Royal Wars C_1-01.png" alt="Imagem do Jogo">
+            <div class="game-card"style="background-image: url('/Image/products_BG.jpg');">
+                <img src="/Image/UnDuplicate/header.webp" alt="Imagem do Jogo">
                 <div class="game-content">
                     <h3>UnDuplicate</h3>
                     <p>Get rid of duplicate files in your project, keep the house clean for easier development.</p>
                       <!--button see more-->
-                      <button class="see-more-button">See More</button>
-                      <button class="see-more-button">On Unity Store <i class="fa-brands fa-unity"></i></button>
+                      <a class="see-more-button" href="UnDuplicate.html">See More</a>
+                      <a class="see-more-button" href="https://assetstore.unity.com/packages/tools/utilities/unduplicate-299296">On Unity Store <i class="fa-brands fa-unity"></i></a>
                 </div>
             </div>
 
-            <div class="game-card"style="background-image: url('/Image/ProductBg.png');">
-                <img src="/Image/Royal Wars C_1-01.png" alt="Imagem do Jogo">
+            <div class="game-card"style="background-image: url('/Image/products_BG.jpg');">
+                <img src="/Image/pepeHeader.png" alt="Imagem do Jogo">
                 <div class="game-content">
                     <h3>Pepe Pinguino</h3>
-                    <p>Unity WebGL endless runner.</p>
-                      <!--button see more-->
-                      <button class="see-more-button">See More</button>
-                      <button class="see-more-button">Play It <i class="fa-solid fa-link"></i></button>
+                    <p>Pepe Penguino is an immersive WebGL endless runner game, expertly designed to adapt seamlessly across various screens and gaming platforms.
+                        Engage in the thrilling experience as you help Pepe Penguino devour delectable fish. Navigate skillfully to dodge obstacles and gather an array of astonishing power-ups to enhance your gameplay!</p>
+                                   
+                      <a class="see-more-button" href="https://runner.shadowprofile.pt/" target="_blank">Play It <i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
        </div>
@@ -144,170 +144,223 @@
         <button class="next" onclick="moveGameSlide(1)">&#10095;</button>   
     
 </section>
-<div class="spacer"><br></div>
-<!-- Produtos Desenvolvidos Section -->
+
+<!-- Produtos diretamente envolvidos Section -->
 <section id="products" class="section products">
     <h2>Directly Involved</h2>
     <div class="products-slider">
         <div class="slider-wrapper">
-            <div class="product-card" style="background-image: url('/Image/ProductBg.png');">
-                <img src="https://via.placeholder.com/400x250" alt="Imagem do Produto">
+            <div class="product-card" style="background-image: url('/Image/products_BG.jpg');">
+                <img src="Image/Lussa/logominimal.avif" alt="Imagem do Produto">
                 <div class="product-content">
-                    <h3>Produto 1</h3>
-                    <p>Descrição do produto 1, detalhando seus benefícios e como ele transforma a experiência do usuário.</p>
+                    <h3>Lussa</h3>
+                    <!-- <p>Descrição do produto 1, detalhando seus benefícios e como ele transforma a experiência do usuário.</p> -->
                 </div>
             </div>
-            <div class="product-card"style="background-image: url('/Image/ProductBg.png');">
-                <img src="https://via.placeholder.com/400x250" alt="Imagem do Produto">
+            <div class="product-card"style="background-image: url('/Image/products_BG.jpg');">
+                <img src="Image/NovoPangea/Novopangea_logo_08c853103e.webp" alt="Imagem do Produto">
                 <div class="product-content">
-                    <h3>Produto 2</h3>
-                    <p>Descrição do produto 2, com ênfase nas inovações que ele trouxe para o mercado.</p>
+                    <h3>Novo Pangea</h3>
+                    <!-- <p>Descrição do produto 2, com ênfase nas inovações que ele trouxe para o mercado.</p> -->
                 </div>
             </div>
-            <div class="product-card"style="background-image: url('/Image/ProductBg.png');">
+            <div class="product-card"style="background-image: url('/Image/products_BG.jpg');">
                 <img src="https://via.placeholder.com/400x250" alt="Imagem do Produto">
                 <div class="product-content">
-                    <h3>Produto 3</h3>
-                    <p>Descrição do produto 3, com destaque para a usabilidade e inovação.</p>
+                    <h3>Dedos</h3>
+                    <!-- <p>Descrição do produto 3, com destaque para a usabilidade e inovação.</p> -->
                 </div>
             </div>
-            <div class="product-card"style="background-image: url('/Image/ProductBg.png');">
+            <div class="product-card"style="background-image: url('/Image/products_BG.jpg');">
                 <img src="https://via.placeholder.com/400x250" alt="Imagem do Produto">
                 <div class="product-content">
-                    <h3>Produto 4</h3>
-                    <p>Descrição do produto 3, com destaque para a usabilidade e inovação.</p>
+                    <h3>Chomp Chomp</h3>
+                    <!-- <p>Descrição do produto 3, com destaque para a usabilidade e inovação.</p> -->
                 </div>
             </div>
-            <div class="product-card"style="background-image: url('/Image/ProductBg.png');">
-                <img src="https://via.placeholder.com/400x250" alt="Imagem do Produto">
-                <div class="product-content">
-                    <h3>Produto 5</h3>
-                    <p>Descrição do produto 3, com destaque para a usabilidade e inovação.</p>
-                </div>
-            </div>
+           
         </div>
       </div>
         <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
 </section>
-<div class="spacer"><br></div>
+
+<section id="reviews" class="section reviews">
+    <h2>What our customers say</h2>
+    <div class="review-slider">
+        <div class="review-cards">
+            <!-- Bloco 1 -->
+            <div class="block-cards">
+                <div class="review-card">
+                    <div class="review-card-front">
+                        <h3>Awesome team</h3>
+                        <p>Tiago and the team helped us with our burning project, they jumped right in and in less then one day they were fixing issues. 
+                            This helped us put the project on track and get the Unity WebGL solution delivered. 
+                            Good communication, respected deadlines and willingness to help, what more could we ask.</p>
+                    </div>
+                    <div class="review-card-back">
+                        <p><strong>Radu Muresan</strong></p>
+                        <div class="review-stars" data-rating="5">
+                            <p class ="review-skill">Rate: </p>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <p>2024/10/30</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-card-front">
+                        <h3>We have worked with Shadow Profile to…</h3>
+                        <p>We have worked with Shadow Profile to deliver a unique webgl educational game that has been well received by our client and their stakeholder community. 
+                            Tiago and his team were good to work with, responsive and very capable technically and communicatively to deliver remotely.
+                             We look forward to working with them into the future also.</p>
+                    </div>
+                    <div class="review-card-back">
+                        <p><strong>Patrick Maui Studios</strong></p>
+                        <div class="review-stars" data-rating="5">
+                            <p class ="review-skill">Rate: </p>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <p>2024/09/09</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-card-front" onclick="window.open('https://pt.trustpilot.com/users/616432ce33556f00126f8600', '_blank');">
+                        <h3>The two companies partnered for 2 years…</h3>
+                        <p>The two companies partnered for 2 years since 2019 when I was looking for an innovative game-developing team to work out on our MVP.
+                            My company (only me and my partner) locates in NYC and Shanghai and is focusing on children's education. Our MVP is for kids to video-chat while interacting with each other in immersive games...
+                           <br>See More <span><i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i>
+                           </p>
+                    </div>
+                    <div class="review-card-back" onclick="window.open('https://pt.trustpilot.com/users/616432ce33556f00126f8600', '_blank');">
+                        <p><strong>Michael Huo</strong></p>
+                        <div class="review-stars" data-rating="5">
+                            <p class ="review-skill">Rate: </p>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <p>2021/10/11</p>
+                        <p>See More <span><i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Bloco 2 -->
+            <div class="block-cards">
+                <div class="review-card">
+                    <div class="review-card-front">
+                        <h3>Loved Brainstorming with him</h3>
+                        <p>Tiago is great to work with. He has a lot of knowledge from different areas and incorporates them all into the project.
+                             He comes up with his own ideas without asking and in general, he is a great person to brainstorm with!</p>
+                    </div>
+                    <div class="review-card-back">
+                        <p><strong>Leonard Scheidemantel</strong></p>
+                        <div class="review-stars" data-rating="5">
+                            <p class ="review-skill">Rate: </p>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                 
+                        <p>2022/03/22</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-card-front">
+                        <h3>Excellent work</h3>
+                        <p>Great experience. Quick and efficient work under a tight schedule and short period of time.</p>
+                    </div>
+                    <div class="review-card-back">
+                        <p><strong>Filipe Oliveira Oliveira</strong></p>
+                        <div class="review-stars" data-rating="5">
+                            <p class ="review-skill">Rate: </p>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                      
+                        <p>2021/10/22</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-card-front">
+                        <h3>Very helpful</h3>
+                        <p>Extremely kind and switched on. Great communication skills and contributes amazing ideas.</p>
+                    </div>
+                    <div class="review-card-back">
+                        <p><strong>Morgan Yin</strong></p>
+                        <div class="review-stars" data-rating="5">
+                            <p class ="review-skill">Rate: </p>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <p>2021/09/08</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botões de Navegação -->
+        <button class="prevReview" onclick="moveReviewSlide(-1)">&#10094;</button>
+        <button class="nextReview" onclick="moveReviewSlide(1)">&#10095;</button>
+    </div>
+</section>
+
+
+
 <!-- Recent Updates Section -->
 <section id="updates" class="section updates">
     <h2>In the press</h2>
     <div class="update-cards">
-        <div class="update-card" onclick="window.location.href='https://exemplo.com/atualizacao1';">
+     
+        <div class="update-card" onclick="window.open('https://www.facebook.com/streetgaming.pt/posts/436265396140743?ref=embed_post', '_blank');">
             <div class="update-line"></div>
             <div class="update-content">
-                <h3>Atualização 1</h3>
-                <p>Novos recursos para o nosso jogo, com melhorias significativas de jogabilidade.</p>
+                <h3>Street Gaming | WE HAVE AN INDIE STUDIO AT THE STANDS OF STREET GAMING CASTELO BRANCO</h3>
+                <p>Street Gaming  <i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i> </p>
+                
             </div>
         </div>
         
-        <div class="update-card" onclick="window.location.href='https://exemplo.com/atualizacao2';">
-            <div class="update-line"></div>
-            <div class="update-content">
-                <h3>Atualização 2</h3>
-                <p>Adicionamos novos mapas e novos modos de jogo para aumentar a imersão.</p>
-            </div>
-        </div>
- 
-    <div class="update-card" onclick="window.location.href='https://exemplo.com/atualizacao2';">
-        <div class="update-line"></div>
-        <div class="update-content">
-            <h3>Atualização 3</h3>
-            <p>Adicionamos novos mapas e novos modos de jogo para aumentar a imersão.</p>
-        </div>
-    </div>
 </div>
 </section>
-<div class="spacer"><br></div>
+
+
+
 <!--Connect With us Section-->
 <section id="connect" class="section connect">
     <h2>Connect with us</h2>
     <div class="socialsEnd">
-        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter fa"></i></a>
-        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/ShadowProfileLDA" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/ShadowProfilePT" class="social-link"><i class="fa-brands fa-x-twitter fa"></i></a>
+        <a href="https://www.instagram.com/shadowprofilelda/" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@ShadowProfile-LDA" class="social-link"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/shadow-profile/" class="social-link"><i class="fab fa-linkedin"></i></a>
     </div>
 </section>
+
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 ShadowProfile. Todos os direitos reservados.</p>
+        <p>&copy; 2019 - 2024 Shadow Profile. All rights reserved.</p>
     </footer>
+    <script src="JS/modal.js"></script>
 
-<script>
- let currentSlide = 0;
-
-function moveSlide(direction) {
-    const sliderWrapper = document.querySelector(".products-slider .slider-wrapper");
-    const slides = document.querySelectorAll(".products-slider .product-card");
-    const totalSlides = slides.length;
-
-    // Update the current slide index
-    currentSlide += direction;
-
-    // Loop back to the first/last slide if at the end/start
-    if (currentSlide >= totalSlides) currentSlide = 0;
-    if (currentSlide < 0) currentSlide = totalSlides - 1;
-
-    // Move the slider
-    sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
-    
-}
-</script>
-<script>
-let currentGameSlide = 0;
-
-function moveGameSlide(direction) {
-    const gameSliderWrapper = document.querySelector(".games-slider .slider-wrapper");
-    const gameSlides = document.querySelectorAll(".games-slider .game-card");
-    const totalGameSlides = gameSlides.length;
-
-    // Atualiza o índice do slide atual
-    currentGameSlide += direction;
-
-    // Faz o loop voltar para o primeiro/último slide
-    if (currentGameSlide >= totalGameSlides) currentGameSlide = 0;
-    if (currentGameSlide < 0) currentGameSlide = totalGameSlides - 1;
-
-    // Move o slider
-    const slideWidth = gameSlides[0].offsetWidth; // Calcula largura real de um slide
-    gameSliderWrapper.style.transform = `translateX(-${currentGameSlide * slideWidth}px)`;
-}
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    const dropdownToggles = document.querySelectorAll("[data-dropdown]");
-
-    dropdownToggles.forEach(toggle => {
-        toggle.addEventListener("click", event => {
-            event.preventDefault();
-            const dropdown = toggle.closest(".dropdown");
-            dropdown.classList.toggle("active");
-
-            // Fechar outros dropdowns
-            document.querySelectorAll(".dropdown").forEach(item => {
-                if (item !== dropdown) {
-                    item.classList.remove("active");
-                }
-            });
-        });
-    });
-
-    // Fechar o dropdown ao clicar fora
-    document.addEventListener("click", event => {
-        if (!event.target.closest(".dropdown")) {
-            document.querySelectorAll(".dropdown").forEach(dropdown => {
-                dropdown.classList.remove("active");
-            });
-        }
-    });
-});
-</script>
 </body>
-
 </html>
