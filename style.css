@@ -71,6 +71,7 @@ font-size: 2em;
 .header .logo {
 margin-top: .5%;
 }
+
 @media (max-width: 768px)  {
     .header .img  {
         width: 160px;
@@ -131,7 +132,7 @@ margin-top: .5%;
     display: block;
 }
 .navbar .dropdown-content a {
-    color: white;
+    color: #dfeeffbf;
     text-decoration: none;
     font-size: 14px;
     letter-spacing: 1px;
