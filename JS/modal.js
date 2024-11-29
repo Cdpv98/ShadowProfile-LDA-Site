@@ -16,6 +16,24 @@ function moveSlide(direction) {
     sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
     
 }
+let currentrewviewMobileSlide = 0;
+
+function moveRMSlide(direction) {
+    const sliderWrapper = document.querySelector(".review-mobile-slider .slider-wrapper");
+    const slides = document.querySelectorAll(".review-mobile-slider .review-mobile-card");
+    const totalSlides = slides.length;
+
+    // Update the current slide index
+    currentrewviewMobileSlide += direction;
+
+    // Loop back to the first/last slide if at the end/start
+    if (currentrewviewMobileSlide >= totalSlides) currentrewviewMobileSlide = 0;
+    if (currentrewviewMobileSlide < 0) currentrewviewMobileSlide = totalSlides - 1;
+
+    // Move the slider
+    sliderWrapper.style.transform = `translateX(-${currentrewviewMobileSlide * 100}%)`;
+    
+}
 
 let currentGameSlide = 0;
 
@@ -156,27 +174,12 @@ nextButton.addEventListener('click', () => {
 // Inicializa os dots
 createDots();
 
+function mobileMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 
-// Função para alternar o menu de navegação no mobile
-function toggleMenu() {
-    const navbarLinks = document.querySelector('.navbar-links');
-    navbarLinks.classList.toggle('active');
-}
-
-// Função para abrir/fechar os dropdowns ao clicar
-document.querySelectorAll('.dropdown-btn').forEach(dropdownBtn => {
-    dropdownBtn.addEventListener('click', (event) => {
-        const dropdown = event.currentTarget.parentElement;
-        dropdown.classList.toggle('open');
-    });
-});
-
-// Fecha os dropdowns quando clicar fora do menu (adiciona interatividade)
-document.addEventListener('click', (event) => {
-    const dropdowns = document.querySelectorAll('.dropdown');
-    dropdowns.forEach(dropdown => {
-        if (!dropdown.contains(event.target) && dropdown.classList.contains('open')) {
-            dropdown.classList.remove('open');
-        }
-    });
-});

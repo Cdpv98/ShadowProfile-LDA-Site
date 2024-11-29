@@ -47,6 +47,20 @@ font-size: 2em;
 p{
     font-size: 18px;
 }
+@media screen and (max-width: 780px) {
+    p{
+        font-size: 15px;        
+    }
+
+    .body h2, .section h2{
+        color: #ff7a20;
+        text-shadow: #ff0000 0em 0em 1.3em;
+        font-family:  'Alegreya', sans-serif;
+    text-align: left;
+    margin-left: 10%;
+    font-size: 24px;
+    }
+}
 
 .header {
     padding: 1.5em 4em;
@@ -75,16 +89,10 @@ p{
 margin-top: .5%;
 }
 
-@media (max-width: 768px)  {
-    .header .img  {
-        width: 160px;
-        height: 20px;
-        margin-top: 0%;
-    }
+@media screen and (max-width: 780px) {
 
   .hero .hero-text .image{
-    width: 350px;
-    height: 80px;
+width: 350px;
   }
 }
 
@@ -148,14 +156,23 @@ margin-top: .5%;
     transition: width .2s ease;
   }
 
-.socials {
+.socials{
     display: flex;
     gap: 1em;
+}
+
+.socials-mobile {
+    display: flex;
+    gap: 1em;
+    font-size: large;
+    justify-content: center;
+    background: linear-gradient(to right,#181a35ad, #1a1a1be9, #181a35ad);
 }
 .social-link {
     color: #4d4d4d38;
     font-size: 0.5rem;
 }
+
 
 .socialsEnd h2{
     color: white;
@@ -164,7 +181,7 @@ margin-top: .5%;
 .socialsEnd .social-link {
     color: white;
     padding: 0.3em 0.4em; 
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     cursor: pointer;
     border-radius: 50%; 
     width: 30px;  
@@ -211,6 +228,19 @@ margin-top: .5%;
     position: relative;
   
 }
+.info{
+    height: 10px;
+    position: relative;
+}
+
+@media screen and (max-width: 780px) {
+
+    .hero {
+        height: 60vh;
+    }
+    .hero-small {height: 34vh;}
+    .hero-empty {height: 34vh;}
+  }
 .hero::before, .hero-small::before, .hero-empty::before{
     content: "";
     position: absolute;
@@ -245,10 +275,17 @@ margin-top: .5%;
     position: relative;
 
 }
- .info{
-    height:1px ;
-    position: relative;
+@media screen and (max-width: 780px) {
+.section {
+    padding: 3em 1em;
+   
+   
 }
+
+.info{
+    height:15VH ;
+    position: relative;
+}}
 
 
 .about, .unity,.contact,.games, .products, .updates, .careers, .reviews{
@@ -269,6 +306,13 @@ color: white;
 text-shadow: rgba(255, 255, 255, 0.178) 0em 0em 1em;
 }
 
+@media screen and (max-width: 780px) {
+    .connect h2{
+        font-size: 20px;
+       
+    
+    }}
+
 .socialsEnd{
     display:flex;
     gap: 1.3em;
@@ -283,6 +327,8 @@ text-shadow: rgba(255, 255, 255, 0.178) 0em 0em 1em;
     margin-left: 10%;
 }
 
+
+    
 .unity .about-content, .contact .about-content{
     display: flex;
     justify-content: start;
@@ -293,17 +339,46 @@ text-shadow: rgba(255, 255, 255, 0.178) 0em 0em 1em;
  .about .about-content .text{
     flex: 1;
     max-width: 550px;
-    text-align: justify;
+    text-align: start;
   text-justify: inter-word;
 }
 
-  .unity .about-content .text, .contact .about-content .text{
+
+.unity .about-content .text, .contact .about-content .text{
     flex: 1;
    padding-left: 10%;
   max-width: 50%;
     text-align: justify;
   text-justify: inter-word;  
 }
+
+@media screen and (max-width: 780px) {
+    .unity .about-content, .contact .about-content{
+        display: block;
+        justify-content: center;
+       
+
+    }
+    
+     .about .about-content .text{
+        flex: 1;
+        max-width: 320px;
+        text-align: start;
+      text-justify: inter-word;
+    }
+    .about .about-content img,  .unity .about-content img {
+        width: 200px;
+        margin-top : 3%;
+        height: auto;
+    }
+    .unity .about-content .text, .contact .about-content .text{
+        flex: 1;
+        max-width: 320px;
+        text-align: start;
+      text-justify: inter-word;  
+    }
+}
+
 
 .contact .about-content h3{
 letter-spacing: 1px;
@@ -323,16 +398,48 @@ font-size: 15px;
         text-decoration: none;
         font-family:  'Titiillium Web', sans-serif;
         }
-        
+        .about .about-content .image, .unity .about-content .image 
+        {
+            filter: drop-shadow(1px 10px 4px #05216d);
+            margin-top: 3%;
+         margin-left: 10%;
+  
+        }
+        .mapouter{position:relative;text-align:right;width:350px;height:350px;}.gmap_canvas {overflow:hidden;background:none!important;width:350px;height:350px;}.gmap_iframe {width:350px!important;height:350px!important;}
+        @media screen and (max-width: 780px) {
+            .contact .about-content h3{
+                letter-spacing: 1px;
+                font-size: 13px;
+                width: 300px;
+                }
+                
+                .contact .about-content h4{
+                    letter-spacing: 2px;
+                    width: 350px;
+                    font-size: 13px;
+                    }
+                
+                    .contact .about-content a{
+                        letter-spacing: 2px;
+                        font-size: 15px;
+                
+             
+                        }
+                        
+                        .contact .about-content .image {
+                         margin-left: 10%;
+                  
+                        }
+                        .mapouter{position:relative;text-align:right;width:275px;height:275px;}.gmap_canvas {overflow:hidden;background:none!important;width:275px;height:275px;}.gmap_iframe {width:275px!important;height:275px!important;}
+   
+
+        }
+
 .about h2, .unity h2, .contact h2{
     margin-left: 0%;
 }
 
-.about .about-content .image, .unity .about-content .image 
-{
-    filter: drop-shadow(1px 10px 4px #05216d);
-    margin-top: 5%;
-}
+
 
 .game-card, .product-card {
    
@@ -342,6 +449,17 @@ font-size: 15px;
     flex: 0 0 100%; 
     box-sizing: border-box; 
 }
+
+.review-mobile-card {
+   
+    max-width: 100%; 
+    padding: 30px;
+    text-align: start;
+    flex: 0 0 100%; 
+    box-sizing: border-box; 
+}
+
+
 
 .game-card img, .product-card img {
     margin-top: 1%;
@@ -356,11 +474,11 @@ font-size: 15px;
     margin-top: 15px;
     
 }
-.game-card h3, .product-card h3 {
+.game-card h3, .product-card h3, .review-mobile-card h3{
     font-size: 1.8rem;
     margin-bottom: 1em;
 }
-.game-card p, .product-card p {
+.game-card p, .product-card p, .review-mobile-card p {
   
     font-size: 1.1rem;
   width: 50%;
@@ -380,18 +498,74 @@ font-size: 15px;
   
 }
 
-.review-slider {
-    position: relative;
-    max-width: 80%;
-    align-items: center;
-    height: 550px;
-    margin: 0 auto;
-    overflow: hidden;
-    background-color: #f9f9f900;
-    border-radius: 10px;
-   
-  
+.reviews-mobile{
+    display: none;
 }
+
+@media screen and (max-width: 780px) {
+    
+
+    .game-card h3, .product-card h3 ,.review-mobile-card h3 {
+        font-size: 18px;
+        margin-bottom: 1em;
+    }
+    .game-card p, .product-card p {
+      
+        font-size: 14px;
+         width: 100%;
+        margin-bottom: 50px;
+        
+    }
+
+    .review-mobile-card p {
+      
+        font-size: 14px;
+         width: 90%;
+     
+   
+    }
+    
+    .products-slider,.games-slider, .review-mobile-slider {
+        position: relative;
+        max-width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        background-color: #f9f9f900;
+        border-radius: 10px;
+        box-shadow: 0px 15px 30px -15px #cbe3ff4d;   
+      
+    }
+
+    button.prev,
+button.next {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #cbe3ffbf;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5em 0.6em;
+    width: 50px;  
+    height: 50px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer;
+    z-index: 10;
+    
+}
+button.prev {
+    left: 16%;
+    bottom: 1%;
+}
+
+button.next {
+    right: 16%;
+    bottom: 1%;
+    }
+}
+
+
+
 .slider-wrapper {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -421,6 +595,18 @@ button.prev {
 
 button.next {
     right: 12%;
+}
+
+
+.review-slider {
+    position: relative;
+    max-width: 80%;
+    align-items: center;
+    height: 550px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #f9f9f900;
+    border-radius: 10px;
 }
 
 button.prevReview,
@@ -513,19 +699,40 @@ text-align: start;
 }
 
 
+@media screen and (max-width: 780px) {
+
+
+    .update-card, .careers-card{
+       
+        width: 100%; 
+        height: 125px;
+    }
+
+    .update-card h3, .careers-card h3 {
+        font-size: 15px;
+    }
+    .update-card p, .careers-card p {
+        font-size: 13px;
+        
+    }
+
+
+}
+
 footer {
     background-color: #0f1020;
     color: #cbe3ffbf;
     font-family: "Titiillium Web";
     text-align: center;
     padding: 2em;
+    
 }
 footer p {
     font-size: 18px;
     color: #cbe3ffbf;
 }
 
-button, .cta-btn, .game-card a {
+button, .cta-btn, .game-card a, .review-mobile-card a {
     background-color: #4971ce;
     border: none;
     color: #f0f7ffbf;
@@ -662,7 +869,79 @@ color:#cbe3ffbf
     gap: 20px;
     justify-content: space-around;
 }
+.review-skill{
+    width: 100px;
+font-size:  18px;
+text-align: start;
+}
 
+.review-stars, .members-stars-member {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 780px) {
+
+    .reviews{display: none;}
+    .reviews-mobile {display: block;}
+    button.prevReview {
+        left: 6%;
+        top: 50%;
+    }
+    button.nextReview {
+        right: 16%;
+        top: 50%;
+    }
+
+    .review-slider {
+        display: flex;
+        overflow: hidden;
+        width:800px;
+        height: 550px;
+        justify-content: center;
+        position: relative;
+    
+    }
+    .block-cards {
+        display: flex;
+        width: 100%; 
+        gap: 5px;
+   
+    }
+    
+    .review-cards {
+        gap: 10px;
+    }
+    
+    
+    .review-card {
+        width: 450px;
+        height: 430px;
+    
+    }
+    
+    
+   
+    .review-card-front h3{
+        padding: 1px;
+        inline-size: 150px;
+        font-size: 18px;
+   
+    }
+    .review-card-front p{
+        font-size: 13px;
+        inline-size: 150px;
+    }
+    .review-skill{
+        width: 20px;
+    font-size:  17px;
+    text-align: start;
+    }
+    
+
+   
+    }
 
 .review-card-back, .members-card-back{
     transform: rotateY(180deg);
@@ -679,12 +958,7 @@ color:#cbe3ffbf
     transform: rotateY(180deg) translateY(-10px) translateX(-5px) rotateX(-10deg); 
 }
 
-.review-stars, .members-stars-member {
-    display: flex;
-    gap: 2px;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .review-stars .star , .members-stars-member .star{
     width: 10px;
@@ -847,11 +1121,6 @@ margin-left: 10%;
 font-size:  16px;
 text-align: start;
 }
-.review-skill{
-    width: 100px;
-font-size:  18px;
-text-align: start;
-}
 
 .members-about{
 font-size: 18px;
@@ -947,7 +1216,22 @@ font-size: 18px;
 width: 80%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 780px) {
+
+ 
+    .members-about{
+        font-size: 15px;
+        width: 80%;
+        margin-left: 10%;
+        text-align: start;
+        }
+    .text-description{
+        padding-bottom: 10%;
+        margin-left: 10%;
+    text-align: start;
+    font-size: 13px;
+    width: 80%;
+    }
     .hero h2 {
         font-size: 3rem;
     }
@@ -956,8 +1240,35 @@ width: 80%;
         width: 220px;
         height: 300px;
     }
+
+    #slider {
+        max-width: 400px;
+        overflow: hidden;
+        height: 250px;
+        margin-top: 10%;
+    }
+    
+
+    .slides img{
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        object-fit:fill;
+    }
+    .slides iframe {
+        width: 400px;
+        height: 250px;
+    }
+
+    .text-description{
+        margin-left: 10%;
+    text-align: start;
+    font-size: 18px;
+    width: 80%;
+    }
+
 }
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .hero h2 {
         font-size: 2.5rem;
     }
@@ -966,7 +1277,7 @@ width: 80%;
         padding: 0.5em;
     }
 }
-@media (max-width: 480px) {
+@media (max-width: 780px) {
     .header {
         flex-direction: column;
         align-items: center;
@@ -989,7 +1300,207 @@ width: 80%;
         max-width: 100px;
     }
 
-    .about h2 {
-        font-size: 1.5rem;
+
+}
+
+
+
+.topnav {
+    background: linear-gradient(to right,#181a35ad, #1a1a1be9, #181a35ad);
+    overflow: hidden;
+    font-family:  'Cinzel', sans-serif;
+ letter-spacing: 4px;    
+ 
+}
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: none;
+    background: linear-gradient(to right,#181a35ad, #1a1a1be9, #181a35ad);
+    color: #f2f2f2;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+
+  }
+
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color: #04aa6d00;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+text-align: center;
+letter-spacing: 4px;
+color: white;
+background: #4971ce00;
+padding:0;
+width: 110px;
+  }
+  .topnav .icon p{
+    font-size: 14px;
+    color:#cbe3ffbf;
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 400;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown-mobile {
+    float: center;
+    background: linear-gradient(to right,#181a35ad, #1a1a1be9, #181a35ad);
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown-mobile .dropbtn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 4px;   
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    display: none;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-mobile-content {
+    display: none;
+    position: absolute;
+    
+    /* 4971ce */
+    background-color: #0c0e1d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-mobile-content a {
+    float: none;
+    color: rgb(245, 250, 255);
+    font-size: 17px;
+    font-weight: 100;
+    font-family:  'Titiillium Web', sans-serif;
+    letter-spacing: 1px;   
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown-mobile:hover .dropbtn {
+    background-color: #4971ce;
+    color: white;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-mobile-content a:hover {
+    /* background-color: #2f3985; */
+    background-color: #4971ce;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown-mobile:hover .dropdown-mobile-content {
+    display: block;
+  }
+  
+  .header-mobile{
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 100;
+    transition: background-color 0.3s ease; 
+  }
+
+  .socials-mobile a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .social-link-mobile {
+    border: 1px solid #4971ce;
+background-color:#ffffff00;
+    color: #fbfdffbf;
+    cursor: pointer;
+    text-align: center;
+
+    border-radius: 100%; 
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    text-decoration: none; 
+
+}
+
+.topnav .logo {
+    position: absolute;
+  
+    padding-top: 12px;
+    padding-left: 15px;
+}
+.topnav .logo .img{
+    display: none;
+    max-width:200px;
+    max-height: auto;
+}
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 780px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
     }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 780px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      background: #4971ce;
+      right: 0;
+      top: 0;
+    }
+    .header{
+        display: none;
+    }
+    .topnav .logo .img{
+        display: flex;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    .topnav.responsive .dropdown-mobile {float: none;}
+    .topnav.responsive .dropdown-mobile-content {position: relative;}
+    .topnav.responsive .dropdown-mobile .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .topnav .socials-mobile .social-link-mobile  {
+    font-size: 15px;   
+padding: 0%;
+width: 30px;
+height: 30px;  
+
+}
+.topnav .socials-mobile .social-link-mobile i {
+align-content: center;
+width: 30px;
+height: 30px;
+margin-left: 2px;
 }

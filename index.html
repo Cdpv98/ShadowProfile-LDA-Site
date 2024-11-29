@@ -8,6 +8,38 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for Social Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <script>
+        // Redireciona para o idioma correto com base no domínio
+        // (function() {
+        //   const domain = window.location.hostname;
+    
+        //   if (domain.endsWith(".pt")) {
+        //     if (!window.location.pathname.startsWith("/pt/")) {
+        //       window.location.href = "/pt/index.html";
+        //     }
+        //   } else if (domain.endsWith(".com")) {
+        //     if (!window.location.pathname.startsWith("/en/")) {
+        //       window.location.href = "/en/index.html";
+        //     }
+        //   }
+        // })();
+
+        (function() {
+  const domain = window.location.hostname;
+
+  if (domain === "example.pt") {
+    if (!window.location.pathname.startsWith("/pt/")) {
+      window.location.href = "/pt/index.html";
+    }
+  } else if (domain === "example.com") {
+    if (!window.location.pathname.startsWith("/en/")) {
+      window.location.href = "/en/index.html";
+    }
+  }
+})();
+      </script>
+
 </head>
 <body>
    <!--  Header -->
@@ -51,6 +83,57 @@
         </div>
     </header>
 
+<header class="header-mobile">
+ 
+    <div class="topnav" id="myTopnav"> 
+        <div class="logo">
+            <img class="img" src="Image/Shadow.png">
+         </div>
+      <a></a>
+      <a></a>
+        <a href="index.html">HOME</a>
+        <a href="Services.html">SERVICES</a>
+        <div class="dropdown-mobile">
+          <button class="dropbtn">GAMES
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-mobile-content">
+            <a href="RoyalWars.html">Royal Wars: Farm TD</a>
+        
+          </div>
+        </div>
+
+        <div class="dropdown-mobile">
+            <button class="dropbtn">PRODUCTS
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-mobile-content">
+              <a href="HierarchyS.html">HierarchyS</a>
+              <a href="LightingOccluder.html">Lighting Occluder</a>
+              <a href="UnDuplicate.html">UnDuplicate</a>
+            </div>
+          </div>
+
+          <div class="dropdown-mobile">
+            <button class="dropbtn">ABOUT
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-mobile-content">
+              <a href="OurTeam.html">Our Team</a>
+              <a href="Careers.html">Careers</a>
+              <a href="Contacts.html">Contacts</a>
+            </div>
+          </div>
+    
+        <div class="socials-mobile">
+            <a href="https://www.facebook.com/ShadowProfileLDA" class="social-link-mobile"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/ShadowProfilePT" class="social-link-mobile"><i class="fa-brands fa-x-twitter fa"></i></a> 
+            <a href="https://www.instagram.com/shadowprofilelda/" class="social-link-mobile"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="mobileMenu()"><p>MENU   <i class="fa-solid fa-bars" style="color: #ffffff;"></i></p></a>
+      </div>
+    </header>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text">
@@ -183,6 +266,122 @@
       </div>
         <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</section>
+
+<section id="reviews-mobile" class="section reviews-mobile">
+    <h2>What our customers say</h2>
+    <div class="review-mobile-slider">
+        <div class="slider-wrapper">
+            <div class="review-mobile-card" style="background-image: url('/Image/products_BG.jpg');">
+                <h3>Awesome team - <strong>Radu Muresan</strong> </h3>
+                <p>2024/10/30</p>
+                        <p>Tiago and the team helped us with our burning project, they jumped right in and in less then one day they were fixing issues. 
+                            This helped us put the project on track and get the Unity WebGL solution delivered. 
+                            Good communication, respected deadlines and willingness to help, what more could we ask.</p>
+                  
+                        <div class="review-stars" data-rating="5">
+                            <p class ="review-skill">Rate: </p>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </div>
+           
+           
+                    <div class="review-mobile-card" style="background-image: url('/Image/products_BG.jpg');">
+                        <h3>We have worked with Shadow Profile to… - <strong>Patrick Maui Studios</strong> </h3>
+                        <p>2024/10/09</p>
+                                <p>We have worked with Shadow Profile to deliver a unique webgl educational game that has been well received by our client and their stakeholder community.
+                                     Tiago and his team were good to work with, responsive and very capable technically and communicatively to deliver remotely.
+                                      We look forward to working with them into the future also.</p>
+                          
+                                <div class="review-stars" data-rating="5">
+                                    <p class ="review-skill">Rate: </p>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </div>
+                       
+
+         <div class="review-mobile-card" style="background-image: url('/Image/products_BG.jpg');">
+                <h3>The two companies partnered for 2 years… - <strong>Michael Huo</strong> </h3>
+                <p>2021/11/11</p>
+                        <p>The two companies partnered for 2 years since 2019 when I was looking for an innovative game-developing team to work out on our MVP.
+                            My company (only me and my partner) locates in NYC and Shanghai and is focusing on children's education. Our MVP is for kids to video-chat while interacting with each other in immersive games...
+                           
+                            </p>
+                           
+                  
+                        <div class="review-stars" data-rating="5">
+                            <p class ="review-skill">Rate: 
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div></p>
+                        <a class="see-more-button" href="https://runner.shadowprofile.pt/" target="_blank">Read More: <i class="fa-solid fa-link"></i></a>
+                    </div>
+             
+
+                    <div class="review-mobile-card" style="background-image: url('/Image/products_BG.jpg');">
+                        <h3>Loved Brainstorming with him - <strong>Leonard Scheidemantel</strong> </h3>
+                        <p>2022/03/22</p>
+                                <p>Tiago is great to work with. He has a lot of knowledge from different areas and incorporates them all into the project.
+                                     He comes up with his own ideas without asking and in general, he is a great person to brainstorm with!</p>
+                          
+                                <div class="review-stars" data-rating="5">
+                                    <p class ="review-skill">Rate: </p>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </div>
+                    
+
+                            <div class="review-mobile-card" style="background-image: url('/Image/products_BG.jpg');">
+                                <h3>Excellent work - <strong>Filipe Oliveira Oliveira</strong> </h3>
+                                <p>2021/10/22</p>
+                                        <p>Great experience. Quick and efficient work under a tight schedule and short period of time.</p>
+                                  
+                                        <div class="review-stars" data-rating="5">
+                                            <p class ="review-skill">Rate: </p>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                        </div>
+                                    </div>
+                               
+                                    <div class="review-mobile-card" style="background-image: url('/Image/products_BG.jpg');">
+                                        <h3>Very helpful - <strong>Morgan Yin</strong> </h3>
+                                        <p>2021/09/08</p>
+                                                <p>Extremely kind and switched on. Great communication skills and contributes amazing ideas.</p>
+                                          
+                                                <div class="review-stars" data-rating="5">
+                                                    <p class ="review-skill">Rate: </p>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                            </div>
+                                       
+           
+        </div>
+      </div>
+        <button class="prev" onclick="moveRMSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveRMSlide(1)">&#10095;</button>
     </div>
 </section>
 
