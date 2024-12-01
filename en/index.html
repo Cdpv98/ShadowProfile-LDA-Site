@@ -15,17 +15,16 @@
           const currentPath = window.location.pathname;
         
           if (domain.endsWith(".io")) {
-            if (!currentPath.startsWith("/pt/")) {
-              window.location.replace("ShadowSite/pt/index.html");
+            if (!currentPath.startsWith("/ShadowSite/pt/")) {
+              window.location.replace("/ShadowSite/pt/index.html");
             }
           } else if (domain.endsWith("github.io")) {
-            if (!currentPath.startsWith("/en/")) {
-              window.location.replace("ShadowSite/en/index.html");
+            if (!currentPath.startsWith("/ShadowSite/en/")) {
+              window.location.replace("/ShadowSite/en/index.html");
             }
           }
         })();
         </script>
-
 </head>
 <body>
    <!--  Header -->
