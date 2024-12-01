@@ -4,7 +4,7 @@ body {
   background-color: #181a35; 
   background-position: left top;
   background-repeat: no-repeat;
-  background: linear-gradient(to top, #181a35f8,#181a3581, #181a3581), url('Image/bg_section.jpg') repeat, center; 
+  background: linear-gradient(to top, #181a35f8,#181a3581, #181a3581), url('../Image/bg_section.jpg') repeat, center; 
     color: #cbe3ffbf;
     font-family: 'Titiillium Web', sans-serif;
 }
@@ -14,20 +14,20 @@ body {
 }
 @font-face {
     font-family: 'Titiillium Web';
-    src: url(Font/TitilliumWeb-Regular.ttf);
+    src: url(../Font/TitilliumWeb-Regular.ttf);
     font-weight:normal;
 font-style: normal;
 }
 @font-face {
     font-family:"Cinzel" ;
-    src: url(Font/Cinzel-VariableFont_wght.ttf);
+    src: url(../Font/Cinzel-VariableFont_wght.ttf);
     font-weight:normal;
     font-style: normal;
     
 }
 @font-face {
     font-family:"Alegreya" ;
-    src: url(Font/Alegreya-Bold.ttf);
+    src: url(../Font/Alegreya-Bold.ttf);
     font-weight:normal;
     font-style: normal;   
 }
@@ -194,7 +194,7 @@ width: 350px;
 }
 
 .hero {
-    background: url('Image/bg.jpg') no-repeat center center/cover;
+    background: url('../Image/bg.jpg') no-repeat center center/cover;
     height: 120vh;
     display: flex;
     justify-content: center;
@@ -206,7 +206,7 @@ width: 350px;
   
 }
 .hero-small {
-    background: url('Image/bg.jpg') no-repeat center center/cover;
+    background: url('../Image/bg.jpg') no-repeat center center/cover;
     height: 30vh;
     display: flex;
     justify-content: center;
