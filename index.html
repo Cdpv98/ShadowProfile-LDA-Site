@@ -10,23 +10,21 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 
     <script>
-     
         (function() {
           const domain = window.location.hostname;
-    
+          const currentPath = window.location.pathname;
+        
           if (domain.endsWith(".io")) {
-            if (!window.location.pathname.startsWith("/pt/")) {
-              window.location.href = "/pt/index.html";
+            if (!currentPath.startsWith("/pt/")) {
+              window.location.replace("/pt/index.html");
             }
           } else if (domain.endsWith("github.io")) {
-            if (!window.location.pathname.startsWith("/en/")) {
-              window.location.href = "/en/index.html";
+            if (!currentPath.startsWith("/en/")) {
+              window.location.replace("/en/index.html");
             }
           }
         })();
-
-
-      </script>
+        </script>
 
 </head>
 <body>
