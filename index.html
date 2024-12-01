@@ -14,13 +14,13 @@
           const domain = window.location.hostname;
           const currentPath = window.location.pathname;
         
-          if (domain.endsWith(".io")) {
-            if (!currentPath.startsWith("/ShadowSite/pt/")) {
-              window.location.replace("/ShadowSite/pt/index.html");
+          if (domain.endsWith(".pt")) {
+            if (!currentPath.startsWith("/pt/")) {
+              window.location.replace("/pt/index.html");
             }
-          } else if (domain.endsWith("github.io")) {
-            if (!currentPath.startsWith("/ShadowSite/en/")) {
-              window.location.replace("/ShadowSite/en/index.html");
+          } else if (domain.endsWith(".com")) {
+            if (!currentPath.startsWith("/en/")) {
+              window.location.replace("en/index.html");
             }
           }
         })();
