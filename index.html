@@ -10,34 +10,22 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 
     <script>
-        // Redireciona para o idioma correto com base no domínio
-        // (function() {
-        //   const domain = window.location.hostname;
-    
-        //   if (domain.endsWith(".pt")) {
-        //     if (!window.location.pathname.startsWith("/pt/")) {
-        //       window.location.href = "/pt/index.html";
-        //     }
-        //   } else if (domain.endsWith(".com")) {
-        //     if (!window.location.pathname.startsWith("/en/")) {
-        //       window.location.href = "/en/index.html";
-        //     }
-        //   }
-        // })();
-
+     
         (function() {
-  const domain = window.location.hostname;
+          const domain = window.location.hostname;
+    
+          if (domain.endsWith(".io")) {
+            if (!window.location.pathname.startsWith("/pt/")) {
+              window.location.href = "/pt/index.html";
+            }
+          } else if (domain.endsWith("gitub.io")) {
+            if (!window.location.pathname.startsWith("/en/")) {
+              window.location.href = "/en/index.html";
+            }
+          }
+        })();
 
-  if (domain === "example.pt") {
-    if (!window.location.pathname.startsWith("/pt/")) {
-      window.location.href = "/pt/index.html";
-    }
-  } else if (domain === "example.com") {
-    if (!window.location.pathname.startsWith("/en/")) {
-      window.location.href = "/en/index.html";
-    }
-  }
-})();
+
       </script>
 
 </head>
