@@ -628,7 +628,7 @@ button.nextReview {
     margin-right:  -11%;
 }
 button.prevReview {
-    right: 16%;
+    right: 20%;
 }
 
 button.nextReview {
@@ -844,12 +844,13 @@ background-color:#ffffff00;
 .review-card-front h3{
     padding: 10px;
     inline-size: 200px;
-    font-size: 20px;
+    font-size: 17px;
     height: 40px;
     font-family:  'Alegreya', sans-serif;
     text-justify: distribute;
     color :#cbe3ffbf;
-    text-shadow: #a9d1ffbf 0em 0em 1.3em;;
+    text-shadow: #a9d1ffbf 0em 0em 1.3em;
+    overflow: hidden;
 }
 .review-card-front p{
     font-size: 15px;
