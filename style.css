@@ -112,7 +112,7 @@ width: 350px;
 }
 
 .navbar ul li a:hover {
-    color: #f9f9f9;
+    color: #91b2ff;
     text-shadow: rgb(255, 255, 255) 0rem 0rem 2rem;
 }
 
@@ -128,7 +128,6 @@ width: 350px;
     z-index: -1;
     margin-top: 0.5%;
     padding: .7rem;
-
     margin-top: 13px;
     background: linear-gradient(to bottom, #1a1a1bc5, #1a1a1bc5);
    border-bottom-left-radius: 3%;
@@ -145,7 +144,7 @@ width: 350px;
 .navbar .dropdown-content a {
     color: #dfeeffbf;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12\px;
     letter-spacing: 1px;
 }
 .navbar .dropdown-content a:after {
@@ -159,6 +158,7 @@ width: 350px;
 .socials{
     display: flex;
     gap: 1em;
+
 }
 
 .socials-mobile {
@@ -448,6 +448,7 @@ font-size: 15px;
     text-align: start;
     flex: 0 0 100%; 
     box-sizing: border-box; 
+   background: no-repeat center/cover;
 }
 
 .review-mobile-card {
@@ -460,15 +461,15 @@ font-size: 15px;
 }
 
 
-
 .game-card img, .product-card img {
     margin-top: 1%;
     margin-left:5%;
-    max-width: 300px;
+    max-width: 180px;
     border-radius: 10px;
     
   
 }
+
 .game-content, .product-content {
     margin-left: 5%;
     margin-top: 15px;
@@ -481,15 +482,15 @@ font-size: 15px;
 .game-card p, .product-card p, .review-mobile-card p {
   
     font-size: 1.1rem;
-  width: 50%;
-  
+  width: 90%;
+
     margin-bottom: 1em;
     
 }
 
 .products-slider,.games-slider {
     position: relative;
-    max-width: 80%;
+    max-width: 60%;
     margin: 0 auto;
     overflow: hidden;
     background-color: #f9f9f900;
@@ -497,6 +498,7 @@ font-size: 15px;
     box-shadow: 0px 15px 30px -15px #cbe3ff4d;   
   
 }
+
 
 .reviews-mobile{
     display: none;
@@ -514,7 +516,7 @@ font-size: 15px;
         font-size: 14px;
          width: 100%;
         margin-bottom: 50px;
-        
+
     }
 
     .review-mobile-card p {
@@ -586,15 +588,15 @@ button.next {
     align-items: center; 
     cursor: pointer;
     z-index: 10;
-    margin-top: -2.5%;
+    margin-top: -3.5%;
     margin-right:  1%;
 }
 button.prev {
-    right: 16%;
+    right: 26%;
 }
 
 button.next {
-    right: 12%;
+    right: 22%;
 }
 
 
@@ -742,6 +744,7 @@ button, .cta-btn, .game-card a, .review-mobile-card a {
     border-radius: 4%;
     transition: box-shadow 0.3s ease, transform 0.2s ease;
     text-decoration: none; 
+
 }
 
 button:hover, .cta-btn:hover, .game-card a:hover{
@@ -961,14 +964,21 @@ text-align: start;
 }
 
 
-
-.review-stars .star , .members-stars-member .star{
+.review-stars .star {
     width: 10px;
     height: 10px;
     background-color: #cccccc00; 
     border: 2px solid #3995ffbf;
     border-radius: 3px;
 }
+ .members-stars-member .star{
+    width: 8px;
+    height: 8px;
+    background-color: #cccccc00; 
+    border: 2px solid #3995ffbf;
+    border-radius: 3px;
+}
+
 
 .members-stars-member{
     margin-top: -20px;
@@ -1047,7 +1057,7 @@ text-indent: 1%;
 
 .photo-gradient{
     width: 100%;
-    height: 20vh;
+    height: 22vh;
     object-fit: cover;
     position: relative;
     background: linear-gradient(to bottom, #1f315ca2,#181a3500, #181a3500,#181a3500, #181a3500),
@@ -1071,7 +1081,7 @@ text-indent: 1%;
 
 .members-photo {
     width: 100%;
-    height: 20vh;
+    height: 22vh;
     object-fit: cover;
     position: relative;
 z-index: -2;
@@ -1086,7 +1096,7 @@ border-top-right-radius: 20px;
     margin-top: -20px;
     color: #ffffffbf;
     font-family: 'Alegreya', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 2px;
     width: 100%;
     
@@ -1113,14 +1123,21 @@ border-top-right-radius: 20px;
 
 .members-skill-title{
 width: 100%;
-font-size:  18px;
+font-size:  14px;
 text-align: start;
 margin-left: 10%;
 }
+.members-skill-facts{
+    width: 100%;
+    font-size:  14px;
+    text-align: start;
+    margin-left: 10%;
+    margin-top: -30px;
+    }
 
 .members-skill-name{
     width: 160px;
-font-size:  16px;
+font-size:  14px;
 text-align: start;
 }
 
@@ -1315,7 +1332,6 @@ width: 80%;
  
 }
   
-  /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
     display: none;
@@ -1328,13 +1344,12 @@ width: 80%;
 
   }
 
-  /* Add an active class to highlight the current page */
   .active {
     background-color: #04aa6d00;
     color: white;
   }
   
-  /* Hide the link that should open and close the topnav on small screens */
+
   .topnav .icon {
     display: none;
 text-align: center;
@@ -1351,14 +1366,14 @@ width: 110px;
     font-weight: 400;
   }
   
-  /* Dropdown container - needed to position the dropdown content */
+
   .dropdown-mobile {
     float: center;
     background: linear-gradient(to right,#181a35ad, #1a1a1be9, #181a35ad);
     overflow: hidden;
   }
   
-  /* Style the dropdown button to fit inside the topnav */
+
   .dropdown-mobile .dropbtn {
     font-size: 14px;
     border: none;
@@ -1371,7 +1386,7 @@ width: 110px;
     display: none;
   }
   
-  /* Style the dropdown content (hidden by default) */
+
   .dropdown-mobile-content {
     display: none;
     position: absolute;
@@ -1383,7 +1398,7 @@ width: 110px;
     z-index: 1;
   }
   
-  /* Style the links inside the dropdown */
+
   .dropdown-mobile-content a {
     float: none;
     color: rgb(245, 250, 255);
@@ -1396,20 +1411,19 @@ width: 110px;
     text-align: center;
   }
   
-  /* Add a dark background on topnav links and the dropdown button on hover */
+
   .topnav a:hover, .dropdown-mobile:hover .dropbtn {
     background-color: #4971ce;
     color: white;
   }
   
-  /* Add a grey background to dropdown links on hover */
+
   .dropdown-mobile-content a:hover {
-    /* background-color: #2f3985; */
+
     background-color: #4971ce;
     color: black;
   }
   
-  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
   .dropdown-mobile:hover .dropdown-mobile-content {
     display: block;
   }
