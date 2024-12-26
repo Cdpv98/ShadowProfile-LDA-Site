@@ -28,6 +28,25 @@
         </script>
 </head>
 <body>
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}; 
+
+    window.Tawk_API.customStyle = {
+        zIndex : 999,
+    };
+    Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/676d2fedaf5bfec1dbe2395a/1ig186e5p';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
    <!--  Header -->
    <header class="header">
     <div class="logo">
@@ -193,7 +212,7 @@
                     <p>Desenhe níveis impressionantes no Unity com o Designer ToolS! Características como o posicionamento físico, a randomização e a criação rápida oferecem um controlo criativo total para construir mundos imersivos sem esforço.</p>
                       <!--button see more-->
                       <a class="see-more-button" href="../pt/DesignerToolS.html">See More</a>
-                      <!-- <a class="see-more-button"href="https://assetstore.unity.com/packages/tools/integration/lighting-occluder-298839">On Unity Store <i class="fa-brands fa-unity"></i></a> -->
+                       <a class="see-more-button"href="https://assetstore.unity.com/packages/tools/utilities/designer-tools-easy-object-placement-tool-304310">On Unity Store <i class="fa-brands fa-unity"></i></a> 
                 </div>
             </div>
 
@@ -554,7 +573,38 @@
     <footer>
         <p>&copy; 2019 - 2024 Shadow Profile. Todos os direitos reservados.</p>
     </footer>
-    <script src="../JS/modal.js"></script>
+<!-- Consentimento de Cookies -->
+<!-- Banner de Consentimento de Cookies -->
+<div id="cookieBanner">
+    <div class="cookie-banner">
+        <img src="../Image/shadowCookies.png" alt="Logo" class="logo">
+        <p>Este website utiliza cookies e tecnologias relacionadas para funcionalidades do site, análise, melhoria da experiência do utilizador e publicidade. Pode consentir na utilização destas tecnologias ou gerir as suas próprias preferências.</p>
+    </div>
+    <div class="cookie-button">
+        <button id="openCookieSettings">Gerir Preferências</button>
+        <button id="acceptAllCookies">Aceitar Todos</button>
+        <button id="declineAllCookies">Rejeitar Todos</button>
+    </div>
+</div>
+
+<!-- Modal de Configurações de Cookies -->
+<div id="cookieSettingsModal">
+    <img src="../Image/shadowCookies.png" alt="Logo" class="logo">
+    <h2>Este website utiliza cookies</h2>
+    <form id="cookieSettingsForm">
+        <label><input type="checkbox" name="essential" checked disabled>Estritamente Necessários</label><br><br>
+        <label><input type="checkbox" name="analytics"> Análise</label><br><br>
+        <label><input type="checkbox" name="marketing"> Marketing</label><br><br>
+    </form>
+    <button id="saveCookieSettings">Aceitar</button>
+    <button id="closeCookieSettings">Cancelar</button>
+</div>
+
+<!-- Overlay para Modal -->
+<div id="modalOverlay" style=""></div>
+
+<script src="../JS/cookies.js"></script>
+<script src="../JS/modal.js"></script>
 
 </body>
 </html>

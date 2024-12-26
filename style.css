@@ -1044,6 +1044,10 @@ text-align: start;
 text-indent: 1%;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 .members-card-front{
     width: 100%;
     height: 100%;
@@ -1532,3 +1536,208 @@ width: 30px;
 height: 30px;
 margin-left: 2px;
 }
+
+#cookieBanner {
+    display: none;
+    position: fixed; 
+    bottom: 0;
+    width: 100%; 
+    background: #FFFFFF;
+    color: rgb(72, 72, 72);
+    padding: 15px; 
+    text-align: right; 
+
+    z-index: 1000;
+}
+#cookieBanner .cookie-banner {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    padding-left: 5%;
+    padding-right: 15%;
+    margin: 20px;
+}
+#cookieBanner .cookie-button{
+    margin-right: 15%;
+}
+#cookieBanner .cookie-banner img {
+    height: 30px;
+    margin-right: 10px; 
+    object-fit: contain; 
+}
+
+#cookieBanner .cookie-banner p {
+    text-align: justify;
+    margin: 0; 
+}
+  
+   #acceptAllCookies{
+        margin: 0 10px; 
+        padding: 10px 20px;
+    width: 180px;
+          border-radius: 20px;
+          cursor: pointer;
+    }
+    #acceptAllCookies:hover{
+        transform: scale(1); 
+          cursor: pointer;
+    }
+
+#declineAllCookies{
+    margin: 0 10px; 
+    padding: 10px 20px;
+    width: 180px;
+     border-radius: 20px;
+    
+
+     cursor: pointer;
+}
+#declineAllCookies:hover{
+    transform: scale(1); 
+
+      cursor: pointer;
+}
+
+
+#openCookieSettings{
+    margin: 0 10px; 
+    padding: 10px 20px;
+    outline: 3px solid #4971ce;
+    color: #4971ce;
+    width: 230px;
+    background-color: #ffffff00;
+     border-radius: 20px;
+    
+
+     cursor: pointer;
+}
+#openCookieSettings:hover{
+    transform: scale(1); 
+
+      cursor: pointer;
+}
+
+
+
+
+#cookieSettingsModal{
+
+    display: none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+     width: 90%; max-width: 500px; 
+     background: white; 
+     color: black;
+      padding: 20px;
+       border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+         z-index: 1001;
+         text-align: center;
+}
+#cookieSettingsForm {
+
+    text-align: left;
+    padding-left: 10%;
+}
+
+#saveCookieSettings{
+    margin: 0 10px; 
+    padding: 10px 20px;
+width: 180px;
+      border-radius: 20px;
+      cursor: pointer;
+}
+#saveCookieSettings:hover{
+    transform: scale(1);
+}
+#closeCookieSettings{
+    margin: 5px 10px; 
+    padding: 10px 20px;
+    outline: 3px solid #4971ce;
+    color: #4971ce;
+    width: 180px;
+    background-color: #ffffff00;
+     border-radius: 20px;
+    
+
+     cursor: pointer;
+}
+#closeCookieSettings:hover{
+    transform: scale(1);
+}
+#modalOverlay{
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+     height: 100%; 
+     background: rgba(0, 0, 0, 0.5); 
+     z-index: 1000;
+}
+
+@media screen and (max-width: 780px) {
+
+ 
+
+    #cookieBanner .cookie-banner {
+        display: block;
+        flex-direction:column; 
+        text-align: center; 
+        align-items:  start; 
+        padding-left: 5%;
+        padding-right: 15%;
+        margin: 20px;
+    }
+    #cookieBanner .cookie-button{
+   display: block;   
+   flex-direction:column; 
+   text-align: center; 
+    }
+ 
+       #acceptAllCookies{
+            margin: 5px 10px; 
+            padding: 10px 20px;
+            width: 70%;
+              border-radius: 20px;
+         
+           
+              cursor: pointer;
+        }
+        #declineAllCookies{
+            margin: 5px 10px; 
+            padding: 10px 20px;
+            width: 70%;
+             border-radius: 20px;
+        
+             cursor: pointer;
+        }
+        #openCookieSettings{
+            margin: 5px 10px; 
+            padding: 10px 20px;
+            outline: 3px solid #4971ce;
+            color: #4971ce;
+            width: 70%;
+            background-color: #ffffff00;
+             border-radius: 20px;
+            
+        
+             cursor: pointer;
+        }
+        
+        #cookieSettingsForm{
+            display: flex;
+            flex-direction: row;
+          
+        }
+        #cookieSettingsForm label{
+            margin-right: 20px;
+        }
+
+        #cookieSettingsModal h2{
+           font-size: 17px;
+        }
+}
+

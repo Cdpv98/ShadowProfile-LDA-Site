@@ -1,3 +1,5 @@
+
+
 let currentSlide = 0;
 
 function moveSlide(direction) {
@@ -182,4 +184,5 @@ function mobileMenu() {
       x.className = "topnav";
     }
   }
+
 
