@@ -47,7 +47,7 @@ font-size: 2em;
 p{
     font-size: 18px;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1030px) {
     p{
         font-size: 15px;        
     }
@@ -89,7 +89,7 @@ p{
 margin-top: .5%;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1030px) {
 
   .hero .hero-text .image{
 width: 350px;
@@ -229,11 +229,11 @@ width: 350px;
   
 }
 .info{
-    height: 10px;
+    height: 100%;
     position: relative;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1030px) {
 
     .hero {
         height: 60vh;
@@ -271,19 +271,19 @@ width: 350px;
 }
 
 .section {
-    padding: 6em 2em;
+    padding: 4.5em 2em;
     position: relative;
 
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1030px) {
 .section {
-    padding: 3em 1em;
+    padding: 2em 1em;
    
    
 }
 
 .info{
-    height:15VH ;
+    height:100% ;
     position: relative;
 }}
 
@@ -306,7 +306,7 @@ color: white;
 text-shadow: rgba(255, 255, 255, 0.178) 0em 0em 1em;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1030px) {
     .connect h2{
         font-size: 20px;
        
@@ -352,7 +352,7 @@ text-shadow: rgba(255, 255, 255, 0.178) 0em 0em 1em;
   text-justify: inter-word;  
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1030px) {
     .unity .about-content, .contact .about-content{
         display: block;
         justify-content: center;
@@ -406,7 +406,7 @@ font-size: 15px;
   
         }
         .mapouter{position:relative;text-align:right;width:350px;height:350px;}.gmap_canvas {overflow:hidden;background:none!important;width:350px;height:350px;}.gmap_iframe {width:350px!important;height:350px!important;}
-        @media screen and (max-width: 780px) {
+        @media screen and (max-width: 1030px) {
             .contact .about-content h3{
                 letter-spacing: 1px;
                 font-size: 13px;
@@ -505,7 +505,7 @@ background-size:calc(102%) 100%;
     display: none;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1030px) {
     
 
     .game-card h3, .product-card h3 ,.review-mobile-card h3 {
@@ -559,13 +559,13 @@ button.next {
     
 }
 button.prev {
-    left: 16%;
-    bottom: 1%;
+    left: 20%;
+    bottom: -1%;
 }
 
 button.next {
     right: 16%;
-    bottom: 1%;
+    bottom: -1%;
     }
 }
 
@@ -704,7 +704,7 @@ text-align: start;
 }
 
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1030px) {
 
 
     .update-card, .careers-card{
@@ -721,7 +721,10 @@ text-align: start;
         
     }
 
-
+    button.next {
+        right: 18%;
+    }
+    
 }
 
 footer {
@@ -780,10 +783,28 @@ background-color:#ffffff00;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1030px) {
     .game-card, .product-card {
         width: 100%;
         margin: 0 auto;
+    }
+    .game-content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .cta-btn, .game-card a, .review-mobile-card a {
+        background-color: #4971ce;
+        border: none;
+        margin-top: 15px;
+        color: #f0f7ffbf;
+        padding: .7em .9em;
+        font-size: .8rem;
+        cursor: pointer;
+        border-radius: 4%;
+        transition: box-shadow 0.3s ease, transform 0.2s ease;
+        text-decoration: none; 
+    
     }
 }
 
@@ -894,7 +915,7 @@ text-align: start;
     justify-content: center;
     align-items: center;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1030px) {
 
     .reviews{display: none;}
     .reviews-mobile {display: block;}
@@ -1015,7 +1036,7 @@ text-align: start;
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1030px) {
     .review-card, .members-card {
         width: 200px;
         height: 350px;
@@ -1037,7 +1058,7 @@ text-align: start;
     text-overflow:ellipsis;
     border-radius: 20px;
     background: linear-gradient(to bottom, #1f315cc2, #253a6bc2, #1a294dc2,#152241c2);
-    background:  url(/Image/vertical.png);
+    background:  url(../Image/vertical.png);
     background-size: 100% 100%;
     transition: transform 0.5s ease;
     box-shadow: #cbe3ffbf ;
@@ -1063,7 +1084,7 @@ body.modal-open {
     text-overflow:ellipsis;
     border-radius: 20px;
     background: linear-gradient(to bottom, #1f315cc2, #253a6bc2, #1a294dc2,#152241c2);
-    background:  url(/Image/vertical.png);
+    background:  url(../Image/vertical.png);
     background-size: 100% 100%;
     transition: transform 0.5s ease;
     box-shadow: #cbe3ffbf ;
@@ -1190,19 +1211,19 @@ text-align: start;
     text-align: start;
     max-width: 1125px;
     overflow: hidden;
-    height: 800px;
+    height: 850px;
   
 }
 
 .slides {
     display: flex;
-
+height: 100%;
+height: 80%;
     transition: transform 0.5s ease-in-out;
 
 }
 .slides img, .slides iframe {
     width: 100%;
-    height: 608px;
     flex-shrink: 0;
     object-fit: fill;
 border-radius: 30px;
@@ -1256,7 +1277,7 @@ font-size: 18px;
 width: 80%;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1030px) {
 
  
     .members-about{
@@ -1282,10 +1303,13 @@ width: 80%;
     }
 
     #slider {
-        max-width: 400px;
-        overflow: hidden;
-        height: 250px;
-        margin-top: 10%;
+        margin: auto;
+        align-content: center;
+        position: relative;
+        width: 95%;
+        text-align: center;
+height: auto;
+
     }
     
 
@@ -1296,8 +1320,8 @@ width: 80%;
         object-fit:fill;
     }
     .slides iframe {
-        width: 400px;
-        height: 250px;
+        width: 100%;
+    
     }
 
     .text-description{
@@ -1306,9 +1330,35 @@ width: 80%;
     font-size: 18px;
     width: 80%;
     }
+.dots{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.slider-controls {
+    position: relative;
+
+
+    transform: translateY(0%);
+}
+.slides{
+    height: 100%;
 
 }
-@media (max-width: 780px) {
+.members-card {
+
+width: 310px;
+}
+.members-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 2fr));
+
+}
+}
+
+@media (max-width: 1030px) {
     .hero h2 {
         font-size: 2.5rem;
     }
@@ -1317,7 +1367,7 @@ width: 80%;
         padding: 0.5em;
     }
 }
-@media (max-width: 780px) {
+@media (max-width: 1030px) {
     .header {
         flex-direction: column;
         align-items: center;
@@ -1490,7 +1540,7 @@ background-color:#ffffff00;
     max-height: auto;
 }
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 1030px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;
     }
@@ -1501,7 +1551,7 @@ background-color:#ffffff00;
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 1030px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
@@ -1761,7 +1811,7 @@ input:disabled:checked + .slider {
     display: inline-block; 
   }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1030px) {
 
  
 
