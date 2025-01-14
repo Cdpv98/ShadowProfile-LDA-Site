@@ -1666,10 +1666,9 @@ body.modal-open {
 }
 
 @media screen and (max-width: 1030px) {
-    .topnav img:not(:first-child), .topnav a .dropdown .dropbtn {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
-        
-    }
+            }
 
     .topnav a.icon {
         float: right;
@@ -1683,7 +1682,9 @@ body.modal-open {
         position: relative;
     }
 
-.topnav.responsive img {height:20px;
+.topnav .space{
+    pointer-events: none;
+    cursor: default;
 }
 
     .topnav.responsive a.icon {
@@ -1691,10 +1692,6 @@ body.modal-open {
         background: #4971ce;
         right: 0;
         top: 0;
-    }
-    .topnav.responsive a.space {
-    height: 20px;
-
     }
 
     .header {
@@ -1785,6 +1782,7 @@ body.modal-open {
     width: 180px;
     border-radius: 20px;
     cursor: pointer;
+    background-color: #506cad;
     color: rgb(251, 251, 251);
 }
 
@@ -1798,7 +1796,7 @@ body.modal-open {
     padding: 10px 20px;
     width: 180px;
     border-radius: 20px;
-
+    background-color: #506cad;
     color: rgb(251, 251, 251);
     cursor: pointer;
 }
@@ -2005,8 +2003,6 @@ input:disabled:checked + .slider {
         padding: 10px 20px;
         width: 70%;
         border-radius: 20px;
-
-
         cursor: pointer;
     }
 
