@@ -6,9 +6,9 @@
     <meta name="description" content="ShadowProfile ">
     <title>ShadowProfile</title>
     <link rel="icon" href="/Image/justlogo (1).png">
+
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Social Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
 
 
     
@@ -31,26 +31,6 @@
 
 </head>
 <body>
-<!-- Chatbot -->
-
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}; 
-
-    window.Tawk_API.customStyle = {
-        zIndex : 999,
-    };
-    Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/676d2fedaf5bfec1dbe2395a/1ig186e5p';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
 
    <!--  Header -->
    <header class="header">
@@ -88,9 +68,9 @@
         </ul>
     </nav>
     <div class="socials">
-        <a href="https://www.linkedin.com/company/shadow-profile/" class="social-link"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/shadowprofilelda/" class="social-link"><i class="fab fa-instagram"></i></a>
-        <a href="https://discord.com/invite/VJ7PtAUv22" class="social-link"><i class="fab fa-discord"></i></a>
+        <a href="https://www.linkedin.com/company/shadow-profile/" class="social-link"aria-label="link"aria-label="linked"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/shadowprofilelda/" class="social-link"aria-label="inst"aria-label="inst"><i class="fab fa-instagram"></i></a>
+        <a href="https://discord.com/invite/VJ7PtAUv22" class="social-link"aria-label="disc"aria-label="disc"><i class="fab fa-discord"></i></a>
       
     </div>
 </header>
@@ -99,10 +79,11 @@
 
     <div class="topnav" id="myTopnav"> 
         <div class="logo">
-            <img class="img" src="Image/Shadow.png">
+            <img class="img" src="Image/Shadow.png"alt ="shadow Logo">
          </div>
-      <a></a>
-      <a></a>
+
+<a></a>
+<a></a>
         <a href="/en/">HOME</a>
         <a href="/en/Services.html">SERVICES</a>
         <div class="dropdown-mobile">
@@ -139,18 +120,19 @@
           </div>
     
         <div class="socials-mobile">
-            <a href="https://www.linkedin.com/company/shadow-profile/" class="social-link-mobile"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/shadowprofilelda/" class="social-link-mobile"><i class="fab fa-instagram"></i></a>
-            <a href="https://discord.com/invite/VJ7PtAUv22" class="social-link-mobile"><i class="fab fa-discord"></i></a>
+            <a href="https://www.linkedin.com/company/shadow-profile/" class="social-link-mobile"aria-label="link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/shadowprofilelda/" class="social-link-mobile"aria-label="ins"><i class="fab fa-instagram"></i></a>
+            <a href="https://discord.com/invite/VJ7PtAUv22" class="social-link-mobile"aria-label="disc"><i class="fab fa-discord"></i></a>
         </div>
 
-        <a href="javascript:void(0);" class="icon" onclick="mobileMenu()"><p><i class="fa-solid fa-bars" style="color: #ffffff;"></i></p></a>
+  
+        <a class="icon" onclick="mobileMenu()"aria-label="btn menu"><p><i class="fa-solid fa-bars" style="color: #ffffff;"></i></p></a>
       </div>
     </header>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text">
-               <img class ="image" src="/Image/ShadowText.png" alt="ShadowProfile Logo">
+               <img class ="image" src="/Image/ShadowText.avif" alt="ShadowProfile Logo">
         </div>
     </section>
 
@@ -177,16 +159,16 @@
 
     <h2>Our Products</h2>
     <!-- <div class="games-slider" style="background-image: url('/Image/products_BG.jpg');"> -->
-        <div class="games-slider" style="background-image: url('/Image/Horizontal.png');">
+        <div class="games-slider" style="background-image: url('/Image/Horizontal.avif');">
         <div class="slider-wrapper">
 
             <div  class="game-card">
-                <img src="/Image/Royal Wars C_1-01.png" alt="Imagem do Jogo">
+                <img src="/Image/Royal Wars C_1-01.webp" alt="Imagem do Jogo">
                 <div class="game-content">
                     <h3>Royal Wars - Farm TD</h3>
                     <p>Royal Wars: Farm TD is a free-to-play tower defense game where strategy meets luck. Place randomly selected towers, merge them to unlock higher tiers, and defend your kingdom through multiple levels. Plant crystals, manage resources, and prepare for epic battles.</p>
                       <!--button see more-->
-                      <a class="see-more-button" href="/en/RoyalWars.html">See More</a>
+                      <a class="see-more-button" href="/en/RoyalWars.html">See more about Royal Wars</a>
                       <a class="see-more-button" href="https://store.steampowered.com/app/1679470/Royal_Wars_Farm_TD/">On Steam <i class="fa-brands fa-steam"></i></a>
                 </div>
             </div>
@@ -197,7 +179,7 @@
                     <h3>HierarchyS</h3>
                     <p>Improve your experience developing in Unity with the tools provided by HierarchyS.</p>
                       <!--button see more-->
-                      <a class="see-more-button" href="/en/HierarchyS.html">See More</a>
+                      <a class="see-more-button" href="/en/HierarchyS.html">See more about HierarhyS</a>
                       <a class="see-more-button"href="https://assetstore.unity.com/packages/tools/utilities/hierarchys-296499">On Unity Store <i class="fa-brands fa-unity"></i></a>
                 </div>
             </div>
@@ -208,18 +190,18 @@
                     <h3>Lighting Occluder</h3>
                     <p>Improve performance by occluding light in your game.</p>
                       <!--button see more-->
-                      <a class="see-more-button" href="/en/LightingOccluder.html">See More</a>
+                      <a class="see-more-button" href="/en/LightingOccluder.html">See more about Lighting Occluder</a>
                       <a class="see-more-button"href="https://assetstore.unity.com/packages/tools/integration/lighting-occluder-298839">On Unity Store <i class="fa-brands fa-unity"></i></a>
                 </div>
             </div>
 
             <div class="game-card">
-                <img src="/Image/DesignerToolS/CardImage_420x280.jpg.png" alt="Imagem do Jogo">
+                <img src="/Image/DesignerToolS/header.webp" alt="Imagem do Jogo">
                 <div class="game-content">
                     <h3>Designer ToolS</h3>
                     <p>Design stunning levels in Unity with Designer ToolS! Features like Physics Placement, Randomization, and Fast Parenting give you full creative control for building immersive worlds effortlessly.</p>
                       <!--button see more-->
-                      <a class="see-more-button" href="/en/DesignerToolS.html">See More</a>
+                      <a class="see-more-button" href="/en/DesignerToolS.html">See more about DesignerToolS</a>
                       <a class="see-more-button"href="https://assetstore.unity.com/packages/tools/utilities/designer-tools-easy-object-placement-tool-304310">On Unity Store <i class="fa-brands fa-unity"></i></a>
                 </div>
             </div>
@@ -230,7 +212,7 @@
                     <h3>UnDuplicate</h3>
                     <p>Get rid of duplicate files in your project, keep the house clean for easier development.</p>
                       <!--button see more-->
-                      <a class="see-more-button" href="/en/UnDuplicate.html">See More</a>
+                      <a class="see-more-button" href="/en/UnDuplicate.html">See more about UnDuplicate</a>
                       <a class="see-more-button" href="https://assetstore.unity.com/packages/tools/utilities/unduplicate-299296">On Unity Store <i class="fa-brands fa-unity"></i></a>
                 </div>
             </div>
@@ -257,7 +239,7 @@
 <section id="products" class="section products" >
     <h2>Directly Involved</h2>
     <!-- <div class="products-slider" style="background-image: url('/Image/products_BG.jpg');"> -->
-        <div class="products-slider"    style="background-image: url('/Image/Horizontal.png');">
+        <div class="products-slider"    style="background-image: url('/Image/Horizontal.avif');">
         <div class="slider-wrapper">
             <div class="product-card">
                 <img src="/Image/Lussa/logominimal.avif" alt="Imagem do Produto">
@@ -274,7 +256,7 @@
                 </div>
             </div>
             <div class="product-card">
-                <img src="/Image/DeDos.png" alt="Imagem do Produto">
+                <img src="/Image/DeDos.avif" alt="Imagem do Produto">
                 <div class="product-content">
                     <h3>Dedos</h3>
                  <p>Tabletop game made with Unity. Compatible with web and mobile devices.</p>
@@ -297,7 +279,7 @@
 
 <section id="reviews-mobile" class="section reviews-mobile">
     <h2>What our customers say</h2>
-    <div class="review-mobile-slider"  style="background-image: url('/Image/Horizontal.png');">
+    <div class="review-mobile-slider"  style="background-image: url('/Image/Horizontal.avif');">
         <div class="slider-wrapper">
             <div class="review-mobile-card" >
                 <h3>Awesome team - <strong>Radu Muresan</strong> </h3>
@@ -573,12 +555,12 @@
 <section id="connect" class="section connect">
     <h2>Connect with us</h2>
     <div class="socialsEnd">
-        <a href="https://www.facebook.com/ShadowProfileLDA" class="social-link"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://x.com/ShadowProfilePT" class="social-link"><i class="fa-brands fa-x-twitter fa"></i></a>
-        <a href="https://www.linkedin.com/company/shadow-profile/" class="social-link"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/shadowprofilelda/" class="social-link"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@ShadowProfile-LDA" class="social-link"><i class="fab fa-youtube"></i></a>
-        <a href="https://discord.com/invite/VJ7PtAUv22" class="social-link"><i class="fab fa-discord"></i></a>
+        <a href="https://www.facebook.com/ShadowProfileLDA" class="social-link" aria-label="Fb"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/ShadowProfilePT" class="social-link"  aria-label="X"><i class="fa-brands fa-x-twitter fa"></i></a>
+        <a href="https://www.linkedin.com/company/shadow-profile/" class="social-link"  aria-label="LD"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/shadowprofilelda/" class="social-link" aria-label="ins"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@ShadowProfile-LDA" class="social-link" aria-label="yout"><i class="fab fa-youtube"></i></a>
+        <a href="https://discord.com/invite/VJ7PtAUv22" class="social-link" aria-label="disc"><i class="fab fa-discord"></i></a>
     </div>
 </section>
 
@@ -602,7 +584,6 @@
 </div>
 </div>
 
-<!-- Modal de Configurações de Cookies -->
 <div id="cookieSettingsModal">
     <img src="/Image/shadowCookies.png" alt="Logo" class="logo">
     <h2>This website uses cookies</h2>
@@ -616,11 +597,12 @@
     <button id="closeCookieSettings">Cancel</button>
 </div>
 
-<!-- Overlay para Modal -->
-<div id="modalOverlay" style=""></div>
 
-<script src="/JS/cookies.js"></script>
-    <script src="/JS/modal.js"></script>
+<div id="modalOverlay"></div>
+
+
+<script async src="/JS/cookies.js"></script>
+<script defer src="/JS/modal.js"></script>
 
 </body>
 </html>

@@ -8,28 +8,11 @@
     <link rel="icon" href="../Image/justlogo (1).png">
     <link rel="stylesheet" href="../style.css">
     <!-- Font Awesome for Social Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
 </head>
 <body>
     <!-- Header -->
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}; 
 
-    window.Tawk_API.customStyle = {
-        zIndex : 999,
-    };
-    Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/676d2fedaf5bfec1dbe2395a/1ig186e5p';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
     <!-- Max 100 Words for the infos
     max 5 skills -->
     
@@ -68,9 +51,9 @@
             </ul>
         </nav>
         <div class="socials">
-            <a href="https://www.linkedin.com/company/shadow-profile/" class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/shadowprofilelda/" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="https://discord.com/invite/VJ7PtAUv22" class="social-link"><i class="fab fa-discord"></i></a>
+            <a href="https://www.linkedin.com/company/shadow-profile/" class="social-link"aria-label="link"aria-label="linked"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/shadowprofilelda/" class="social-link"aria-label="inst"aria-label="inst"><i class="fab fa-instagram"></i></a>
+            <a href="https://discord.com/invite/VJ7PtAUv22" class="social-link"aria-label="disc"aria-label="disc"><i class="fab fa-discord"></i></a>
         </div>
     </header>
 
@@ -78,10 +61,10 @@
  
         <div class="topnav" id="myTopnav"> 
             <div class="logo">
-                <img class="img" src="../Image/Shadow.png">
+                <img class="img" src="../Image/Shadow.png"alt ="shadow Logo">
              </div>
-          <a></a>
-          <a></a>
+             <a href="#" class="space"></a>
+             <a href="#" class="space"></a>
             <a href="../en/">HOME</a>
             <a href="../en/Services.html">SERVICES</a>
             <div class="dropdown-mobile">
@@ -118,12 +101,13 @@
               </div>
         
             <div class="socials-mobile">
-                <a href="https://www.linkedin.com/company/shadow-profile/" class="social-link-mobile"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/shadowprofilelda/" class="social-link-mobile"><i class="fab fa-instagram"></i></a>
-                <a href="https://discord.com/invite/VJ7PtAUv22" class="social-link-mobile"><i class="fab fa-discord"></i></a>
+                <a href="https://www.linkedin.com/company/shadow-profile/" class="social-link-mobile"aria-label="link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/shadowprofilelda/" class="social-link-mobile"aria-label="ins"><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.com/invite/VJ7PtAUv22" class="social-link-mobile"aria-label="disc"><i class="fab fa-discord"></i></a>
             </div>
     
-            <a href="javascript:void(0);" class="icon" onclick="mobileMenu()"><p><i class="fa-solid fa-bars" style="color: #ffffff;"></i></p></a>
+      
+            <a  class="icon" onclick="mobileMenu()"aria-label="btn menu"><p><i class="fa-solid fa-bars" style="color: #ffffff;"></i></p></a>
           </div>
         </header>
     <!-- Hero Section -->
@@ -204,10 +188,10 @@
 </div>
 
 <!-- Overlay para Modal -->
-<div id="modalOverlay" style=""></div>
+<div id="modalOverlay"></div>
 
-<script src="../JS/cookies.js"></script>
-    <script src="../JS/modal.js"></script>
+<script async src="../JS/cookies.js"></script>
+<script defer src="../JS/modal.js"></script>
 
 </body>
 </html>
