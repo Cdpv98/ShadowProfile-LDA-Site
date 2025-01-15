@@ -164,7 +164,7 @@ function loadAnalyticsScript() {
     if (!document.getElementById('analyticsScriptTag')) {
         const script = document.createElement('script');
         script.id = 'analyticsScriptTag';
-        script.async = true;
+        script.defer = true;
         script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-21776671-2';
         document.head.appendChild(script);
 
