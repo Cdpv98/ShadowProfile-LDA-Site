@@ -98,10 +98,15 @@ p {
     margin-top: .5%;
 }
 
+.hero .hero-text .image {
+    width: 700px;
+    height: auto;
+}
 @media screen and (max-width: 1030px) {
 
     .hero .hero-text .image {
         width: 300px;
+        height: auto;
     }
 }
 
@@ -207,7 +212,7 @@ p {
 }
 
 .hero {
-    background: url('../Image/bg.webp') no-repeat center center/cover !important;  
+    background: url('../Image/bg.webp') no-repeat center center/cover;  
 
     height: 120vh;
     display: flex;
@@ -221,9 +226,9 @@ p {
 }
 
 .hero-small {
-    background: url('../Image/bg.webp') no-repeat center center/cover !important;
-    background-position: 50% 30%;
-   max-height: 30vh;
+    background: url('../Image/bg.webp') no-repeat center center/cover;
+    background-position: 50% 35%;
+   height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,17 +256,7 @@ p {
     position: relative;
 }
 
-.hero::before, .hero-small::before, .hero-empty::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    background: linear-gradient(to top, #181a35, #181a3508, #181a3500);
-}
+
 @media screen and (max-width: 1030px) {
 
     .hero {
@@ -281,7 +276,17 @@ p {
 }
 
 
-
+.hero::before, .hero-small::before, .hero-empty::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    background: linear-gradient(to top, #181a35, #181a3508, #181a3500);
+}
 .hero-text {
     z-index: 2;
 }
@@ -395,6 +400,12 @@ p {
     max-width: 50%;
     text-align: justify;
     text-justify: inter-word;
+}
+
+.about .about-content img, .unity .about-content img {
+    width: 250px;
+    margin-top: 3%;
+    height: auto;
 }
 
 @media screen and (max-width: 1030px) {

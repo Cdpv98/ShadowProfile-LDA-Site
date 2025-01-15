@@ -14,7 +14,7 @@
     <!-- Font Awesome for Social Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
 
-    <script>
+    <!-- <script>
         (function() {
           const domain = window.location.hostname;
           const currentPath = window.location.pathname;
@@ -29,7 +29,32 @@
             }
           }
         })();
-        </script>
+        </script> -->
+
+        <!--Machine || Browser Check-->
+        <!-- <script>
+            (async function () {
+              const userLang = navigator.language || navigator.userLanguage;
+            
+              const systemLang = Intl.DateTimeFormat().resolvedOptions().locale;
+            
+         
+              const detectedLang = systemLang || userLang;
+              const currentPath = window.location.pathname;
+            
+              if (detectedLang.startsWith("pt")) {
+               
+                if (!currentPath.startsWith("/pt/")) {
+                  window.location.replace("/pt/");
+                }
+              } else {
+
+                if (!currentPath.startsWith("/en/")) {
+                  window.location.replace("/en/");
+                }
+              }
+            })();
+            </script> -->
 </head>
 <body>
 
@@ -535,6 +560,15 @@
     <h2>In the press</h2>
     <div class="update-cards">
      
+        <div class="update-card" onclick="window.open('https://eventos.esmad.ipp.pt/plug-in/', '_blank');">
+            <div class="update-line"></div>
+            <div class="update-content">
+                <h3>Plug-In | 8TH EDITION OF PLUG-IN</h3>
+                <p>Esmad Plug-in  <i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i> </p>
+                
+            </div>
+        </div>
+
         <div class="update-card" onclick="window.open('https://www.facebook.com/streetgaming.pt/posts/436265396140743?ref=embed_post', '_blank');">
             <div class="update-line"></div>
             <div class="update-content">
