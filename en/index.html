@@ -564,7 +564,10 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2019 - 2024 Shadow Profile. All rights reserved.</p>
+        <p>&copy; 2019 - <span id="currentYear"></span> Shadow Profile. All rights reserved.</p>
+        <script>
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+        </script>
     </footer>
     <!-- Cookie Consent -->
 <!-- Banner de Consentimento de Cookies -->
