@@ -4,7 +4,7 @@ body {
     background-color: #181a35;
     background-position: left top;
     background-repeat: no-repeat;
-    background: linear-gradient(to top, #181a35f8, #181a3581, #181a3581), url('../Image/bg_section.webp') repeat, center;
+    background: linear-gradient(to top, #181a35f8, #181a3581, #181a3581), url('../Image/bg_section.webp') repeat, center !important;
     color: #cbe3ffbf;
     font-family: 'Titiillium Web', sans-serif;
 }
@@ -101,7 +101,7 @@ p {
 @media screen and (max-width: 1030px) {
 
     .hero .hero-text .image {
-        width: 350px;
+        width: 300px;
     }
 }
 
@@ -207,7 +207,8 @@ p {
 }
 
 .hero {
-    background: url('../Image/bg.webp') no-repeat center center/cover;
+    background: url('../Image/bg.webp') no-repeat center center/cover !important;  
+
     height: 120vh;
     display: flex;
     justify-content: center;
@@ -220,9 +221,9 @@ p {
 }
 
 .hero-small {
-    background: url('../Image/bg.webp') no-repeat center center/cover;
+    background: url('../Image/bg.webp') no-repeat center center/cover !important;
     background-position: 50% 30%;
-    height: 30vh;
+   max-height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,23 +251,6 @@ p {
     position: relative;
 }
 
-@media screen and (max-width: 1030px) {
-
-    .hero {
-        background: url('../Image/bg_mobile.webp') no-repeat center center/cover;
-        height: 40vh;
-    }
-
-    .hero-small {
-        background: url('../Image/bg_mobile.webp') no-repeat center center/cover;
-        height: 20vh;
-    }
-
-    .hero-empty {
-        height: 20vh;
-    }
-}
-
 .hero::before, .hero-small::before, .hero-empty::before {
     content: "";
     position: absolute;
@@ -278,6 +262,25 @@ p {
     z-index: 1;
     background: linear-gradient(to top, #181a35, #181a3508, #181a3500);
 }
+@media screen and (max-width: 1030px) {
+
+    .hero {
+        background: url('../Image/bg_mobile.webp') no-repeat center center/cover;
+        height: 250px;
+    }
+
+    .hero-small {
+        background: url('../Image/bg_mobile.webp') no-repeat center center/cover;
+        height: 200px;
+    }
+
+    .hero-empty {
+        height: 200px;
+    }
+
+}
+
+
 
 .hero-text {
     z-index: 2;

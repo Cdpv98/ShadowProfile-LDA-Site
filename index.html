@@ -2,11 +2,14 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="ShadowProfile ">
     <title>ShadowProfile</title>
-    <link rel="icon" href="../Image/justlogo (1).webp">
-
+    <link rel="icon" href="/Image/justlogo (1).webp">
+    <link rel="preload" as="image" href="/Image/bg.webp">
+    <link rel="preload" as="image" href="/Image/bg_mobile.webp">
+    <link rel="preload" as="image" href="/Image/ShadowText.avif">
+    <link rel="preload" as="image" href="/Image/bg_section.webp">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
 
@@ -129,9 +132,9 @@
       </div>
     </header>
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" height="250px" rel="preload">
         <div class="hero-text">
-               <img class ="image" src="/Image/ShadowText.avif" alt="ShadowProfile Logo">
+               <img class ="image"  rel="preload"src="/Image/ShadowText.avif" alt="ShadowProfile Logo">
         </div>
     </section>
 
@@ -141,10 +144,10 @@
     <div class="about-content">
         <div class="text">
             <h2>Who we are</h2>
-            <p>We are a game development company combining creativity and technology to craft innovative experiences. 
+            We are a game development company combining creativity and technology to craft innovative experiences. 
                 We offer services such as Unity 3D and Unreal Engine development, NFT games, and augmented and virtual reality experiences for platforms like Apple Vision Pro and Meta Quest.
                  With a passionate and dedicated team, we focus on creating games that blend compelling storytelling, dynamic gameplay, and stunning visuals.
-                 We thrive on the passion for transforming ideas into unique digital adventures.</p>
+                 We thrive on the passion for transforming ideas into unique digital adventures.
         </div>
         <div class="image">
             <img src="/Image/justlogo (1).webp" alt="Imagem Sobre">
@@ -173,7 +176,7 @@
             </div>
             
             <div class="game-card">
-                <img src="/Image/HierarchyS/Header.webp" width="320" height="180" alt="Imagem do Jogo">
+                <img src="/Image/HierarchyS/headerMinimal.webp" width="320" height="180" alt="Imagem do Jogo">
                 <div class="game-content">
                     <h3>HierarchyS</h3>
                     <p>Improve your experience developing in Unity with the tools provided by HierarchyS.</p>
@@ -195,7 +198,7 @@
             </div>
 
             <div class="game-card">
-                <img src="/Image/DesignerToolS/header.webp"  width="320" height="180" alt="Imagem do Jogo">
+                <img src="/Image/DesignerToolS/HeaderMinimal.webp"  width="320" height="180" alt="Imagem do Jogo">
                 <div class="game-content">
                     <h3>Designer ToolS</h3>
                     <p>Design stunning levels in Unity with Designer ToolS! Features like Physics Placement, Randomization, and Fast Parenting give you full creative control for building immersive worlds effortlessly.</p>
