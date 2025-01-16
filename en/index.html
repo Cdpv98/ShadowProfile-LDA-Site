@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="ShadowProfile ">
     <title>ShadowProfile</title>
-    <link rel="icon" href="/Image/justlogo (1).webp">
-    <link rel="preload" as="image" href="/Image/bg.webp">
-    <link rel="preload" as="image" href="/Image/bg_mobile.webp">
-    <link rel="preload" as="image" href="/Image/ShadowText.avif">
-    <link rel="preload" as="image" href="/Image/bg_section.webp">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../Image/justlogo (1).webp">
+    <link rel="preload" as="image" href="../Image/bg.webp">
+    <link rel="preload" as="image" href="../Image/bg_mobile.webp">
+    <link rel="preload" as="image" href="../Image/ShadowText.avif">
+    <link rel="preload" as="image" href="../Image/bg_section.webp">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Font Awesome for Social Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
 
-
-        <!-- <script>
+    <!-- <script>
         (function() {
           const domain = window.location.hostname;
           const currentPath = window.location.pathname;
@@ -30,65 +30,67 @@
           }
         })();
         </script> -->
-        <script>
+
+        <!--Machine || Browser Check-->
+        <!-- <script>
             (async function () {
-            
               const userLang = navigator.language || navigator.userLanguage;
             
               const systemLang = Intl.DateTimeFormat().resolvedOptions().locale;
             
-              const detectedLang =  userLang || systemLang;
+         
+              const detectedLang = systemLang || userLang;
               const currentPath = window.location.pathname;
             
               if (detectedLang.startsWith("pt")) {
-      
+               
                 if (!currentPath.startsWith("/pt/")) {
                   window.location.replace("/pt/");
                 }
               } else {
-                
+
                 if (!currentPath.startsWith("/en/")) {
                   window.location.replace("/en/");
                 }
               }
             })();
-            </script>
-
+            </script> -->
 </head>
 <body>
+
 
    <!--  Header -->
    <header class="header">
     <div class="logo">
-       <img class="img" src="Image/Shadow.webp"alt ="shadow Logo">
+       <img class="img" src="../Image/Shadow.webp" alt ="shadow Logo">
     </div>
     <nav class="navbar">
         <ul>
           
-            <li><a href="/en/">HOME</a></li>
-            <li><a href="/en/Services.html">SERVICES</a></li>
+            <li><a href="../en/">HOME</a></li>
+            <li><a href="../en/Services.html">SERVICES</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-dropdown>GAMES <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-content">
-                    <li><a href="/en/RoyalWars.html">Royal Wars - Farm TD</a></li>
-                    <li><a href="/en/ShadowedDescent.html">Shadowed Descent</a></li>
+                    <li><a href="../en/RoyalWars.html">Royal Wars - Farm TD</a></li>
+                    <li><a href="../en/ShadowedDescent.html">Shadowed Descent</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-dropdown>PRODUCTS <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-content">
-                    <li><a href="/en/HierarchyS.html">HierarchyS</a></li>
-                    <li><a href="/en/LightingOccluder.html">Lighting Occluder</a></li>
-                    <li><a href="/en/DesignerToolS.html">Designer ToolS</a></li>
-                    <li><a href="/en/UnDuplicate.html">UnDuplicate</a></li>
+                    <li><a href="../en/HierarchyS.html">HierarchyS</a></li>
+                    <li><a href="../en/LightingOccluder.html">Lighting Occluder</a></li>
+                    <li><a href="../en/DesignerToolS.html">Designer ToolS</a></li>
+                    <li><a href="../en/UnDuplicate.html">UnDuplicate</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-dropdown>ABOUT <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-content">
-                    <li><a href="/en/OurTeam.html">Our Team</a></li>
-                    <li><a href="/en/Careers.html">Careers</a></li>
-                    <li><a href="/en/Contacts.html">Contacts</a></li>
+                    <li><a href="../en/OurTeam.html">Our Team</a></li>
+                    <li><a href="../en/Careers.html">Careers</a></li>
+                    <li><a href="../en/Contacts.html">Contacts</a></li>
                 </ul>
             </li>
         </ul>
@@ -97,7 +99,6 @@
         <a href="https://www.linkedin.com/company/shadow-profile/" class="social-link"aria-label="link"aria-label="linked"><i class="fab fa-linkedin"></i></a>
         <a href="https://www.instagram.com/shadowprofilelda/" class="social-link"aria-label="inst"aria-label="inst"><i class="fab fa-instagram"></i></a>
         <a href="https://discord.com/invite/VJ7PtAUv22" class="social-link"aria-label="disc"aria-label="disc"><i class="fab fa-discord"></i></a>
-      
     </div>
 </header>
 
@@ -105,19 +106,19 @@
 
     <div class="topnav" id="myTopnav"> 
         <div class="logo">
-            <img class="img" src="Image/Shadow.webp"alt ="shadow Logo">
+            <img class="img" src="../Image/Shadow.webp"alt ="img">
          </div>
-<a href="javascript:void(0)" class ="space" aria-label="empty"></a>
-<a href="javascript:void(0)"class ="space"aria-label="empty"></a>
-        <a href="/en/">HOME</a>
-        <a href="/en/Services.html">SERVICES</a>
+         <a href="#" class="space"></a>
+         <a href="#" class="space"></a>
+        <a href="../en/">HOME</a>
+        <a href="../en/Services.html">SERVICES</a>
         <div class="dropdown-mobile">
           <button class="dropbtn">GAMES
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="dropdown-mobile-content">
-            <a href="/en/RoyalWars.html">Royal Wars: Farm TD</a>
-            <a href="/en/ShadowedDescent.html">Shadowed Descent</a>
+            <a href="../en/RoyalWars.html">Royal Wars: Farm TD</a>
+            <a href="../en/ShadowedDescent.html">Shadowed Descent</a>
           </div>
         </div>
 
@@ -126,10 +127,10 @@
               <i class="fas fa-chevron-down"></i>
             </button>
             <div class="dropdown-mobile-content">
-              <a href="/en/HierarchyS.html">HierarchyS</a>
-              <a href="/en/LightingOccluder.html">Lighting Occluder</a>
-              <a href="/en/DesignerToolS.html">Designer ToolS</a>
-              <a href="/en/UnDuplicate.html">UnDuplicate</a>
+              <a href="../en/HierarchyS.html">HierarchyS</a>
+              <a href="../en/LightingOccluder.html">Lighting Occluder</a>
+              <a href="../en/DesignerToolS.html">Designer ToolS</a>
+              <a href="../en/UnDuplicate.html">UnDuplicate</a>
             </div>
           </div>
 
@@ -138,9 +139,9 @@
               <i class="fas fa-chevron-down"></i>
             </button>
             <div class="dropdown-mobile-content">
-              <a href="/en/OurTeam.html">Our Team</a>
-              <a href="/en/Careers.html">Careers</a>
-              <a href="/en/Contacts.html">Contacts</a>
+              <a href="../en/OurTeam.html">Our Team</a>
+              <a href="../en/Careers.html">Careers</a>
+              <a href="../en/Contacts.html">Contacts</a>
             </div>
           </div>
     
@@ -150,14 +151,14 @@
             <a href="https://discord.com/invite/VJ7PtAUv22" class="social-link-mobile"aria-label="disc"><i class="fab fa-discord"></i></a>
         </div>
 
-  
+   
         <a href="javascript:void(0);" class="icon" onclick="mobileMenu()" role="button" aria-label="Abrir menu"><p><i class="fa-solid fa-bars" style="color: #ffffff;"></i></p></a>
       </div>
     </header>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text">
-               <img class ="image" src="/Image/ShadowText.avif" alt="ShadowProfile Logo">
+            <img class ="image" src="../Image/ShadowText.avif"  alt="ShadowProfile Logo">
         </div>
     </section>
 
@@ -183,77 +184,76 @@
 <section id="games" class="section games">
 
     <h2>Our Products</h2>
-    <!-- <div class="games-slider" style="background-image: url('/Image/products_BG.jpg');"> -->
-        <div class="games-slider" style="background-image: url('/Image/Horizontal.avif');">
+    <div class="games-slider"style="background-image: url('../Image/Horizontal.avif');">
         <div class="slider-wrapper">
 
             <div  class="game-card">
-                <img src="/Image/Royal Wars C_1-01.webp" width="320" height="180" alt="Imagem do Jogo">
+                <img src="../Image/Royal Wars C_1-01.webp" alt="Imagem do Jogo" width="250px" height="160px">
                 <div class="game-content">
                     <h3>Royal Wars - Farm TD</h3>
                     <p>Royal Wars: Farm TD is a free-to-play tower defense game where strategy meets luck. Place randomly selected towers, merge them to unlock higher tiers, and defend your kingdom through multiple levels. Plant crystals, manage resources, and prepare for epic battles.</p>
                       <!--button see more-->
-                      <a class="see-more-button" href="/en/RoyalWars.html">See more about Royal Wars</a>
+                      <a class="see-more-button" href="../en/RoyalWars.html">See more about Royal Wars</a>
                       <a class="see-more-button" href="https://store.steampowered.com/app/1679470/Royal_Wars_Farm_TD/">On Steam <i class="fa-brands fa-steam"></i></a>
                 </div>
             </div>
             
             <div  class="game-card">
-                <img src="/Image/ShadowedDescent/header.webp" alt="Imagem do Jogo" width="250px" height="160px">
+                <img src="../Image/ShadowedDescent/header.webp" alt="Imagem do Jogo" width="250px" height="160px">
                 <div class="game-content">
                     <h3>Shadowed Descent</h3>
                     <p><strong>Shadowed Descent</strong> blends fast-paced action with strategic elements in a dark and immersive journey. Face relentless enemy hordes and solve puzzles as you uncover the mysteries of a haunted world. Rely on your wits, quick reflexes, and resource management to overcome each challenge in this unique game that puts your skills to the test!</p>
-                      <a class="see-more-button" href="/en/ShadowedDescent.html">See more about Shadowed Descent</a>
+                      <a class="see-more-button" href="../en/ShadowedDescent.html">See more about Shadowed Descent</a>
                       <a class="see-more-button" href="https://store.steampowered.com/app/2987720/Shadowed_Descent/">On Steam <i class="fa-brands fa-steam"></i></a>
                 </div>
             </div>
 
             <div class="game-card">
-                <img src="/Image/HierarchyS/headerMinimal.webp" width="320" height="180" alt="Imagem do Jogo">
+                <img src="../Image/HierarchyS/headerMinimal.webp" alt="Imagem do Jogo" width="250px" height="160px">
                 <div class="game-content">
                     <h3>HierarchyS</h3>
                     <p>Improve your experience developing in Unity with the tools provided by HierarchyS.</p>
                       <!--button see more-->
-                      <a class="see-more-button" href="/en/HierarchyS.html">See more about HierarhyS</a>
+                      <a class="see-more-button" href="../en/HierarchyS.html">See more about HierarchyS</a>
                       <a class="see-more-button"href="https://assetstore.unity.com/packages/tools/utilities/hierarchys-296499">On Unity Store <i class="fa-brands fa-unity"></i></a>
                 </div>
             </div>
             
             <div class="game-card">
-                <img src="/Image/LightingOccluder/header.webp" width="320" height="180" alt="Imagem do Jogo">
+                <img src="../Image/LightingOccluder/header.webp" alt="Imagem do Jogo"width="250px" height="160px"> 
                 <div class="game-content">
                     <h3>Lighting Occluder</h3>
                     <p>Improve performance by occluding light in your game.</p>
                       <!--button see more-->
-                      <a class="see-more-button" href="/en/LightingOccluder.html">See more about Lighting Occluder</a>
+                      <a class="see-more-button" href="../en/LightingOccluder.html">See more about Lighting Occluder</a>
                       <a class="see-more-button"href="https://assetstore.unity.com/packages/tools/integration/lighting-occluder-298839">On Unity Store <i class="fa-brands fa-unity"></i></a>
                 </div>
             </div>
 
             <div class="game-card">
-                <img src="/Image/DesignerToolS/HeaderMinimal.webp"  width="320" height="180" alt="Imagem do Jogo">
+                <img src="../Image/DesignerToolS/HeaderMinimal.webp" alt="Imagem do Jogo"width="250px" height="160px">
                 <div class="game-content">
                     <h3>Designer ToolS</h3>
                     <p>Design stunning levels in Unity with Designer ToolS! Features like Physics Placement, Randomization, and Fast Parenting give you full creative control for building immersive worlds effortlessly.</p>
                       <!--button see more-->
-                      <a class="see-more-button" href="/en/DesignerToolS.html">See more about DesignerToolS</a>
-                      <a class="see-more-button"href="https://assetstore.unity.com/packages/tools/utilities/designer-tools-easy-object-placement-tool-304310">On Unity Store <i class="fa-brands fa-unity"></i></a>
+                      <a class="see-more-button" href="../en/DesignerToolS.html">See more abuot DesignerToolS</a>
+                       <a class="see-more-button"href="https://assetstore.unity.com/packages/tools/utilities/designer-tools-easy-object-placement-tool-304310">On Unity Store <i class="fa-brands fa-unity"></i></a> 
                 </div>
             </div>
 
             <div class="game-card">
-                <img src="/Image/UnDuplicate/header.webp" width="320" height="180" alt="Imagem do Jogo">
+                <img src="../Image/UnDuplicate/header.webp" alt="Imagem do Jogo"width="250px" height="160px">
                 <div class="game-content">
                     <h3>UnDuplicate</h3>
                     <p>Get rid of duplicate files in your project, keep the house clean for easier development.</p>
                       <!--button see more-->
-                      <a class="see-more-button" href="/en/UnDuplicate.html">See more about UnDuplicate</a>
+                      <a class="see-more-button" href="../en/UnDuplicate.html">See more about UnDuplicate</a>
                       <a class="see-more-button" href="https://assetstore.unity.com/packages/tools/utilities/unduplicate-299296">On Unity Store <i class="fa-brands fa-unity"></i></a>
                 </div>
             </div>
 
             <div class="game-card">
-                <img src="/Image/pepeHeader.avif" width="320" height="180" alt="Imagem do Jogo">
+                <img src="../Image/pepeHeader.avif" alt="Imagem do Jogo"width="250px" height="160px">
                 <div class="game-content">
                     <h3>Pepe Pinguino</h3>
                     <p>Pepe Penguino is an immersive WebGL endless runner game, expertly designed to adapt seamlessly across various screens and gaming platforms.
@@ -271,34 +271,33 @@
 </section>
 
 <!-- Produtos diretamente envolvidos Section -->
-<section id="products" class="section products" >
+<section id="products" class="section products">
     <h2>Directly Involved</h2>
-    <!-- <div class="products-slider" style="background-image: url('/Image/products_BG.jpg');"> -->
-        <div class="products-slider"    style="background-image: url('/Image/Horizontal.avif');">
+    <div class="products-slider" style="background-image: url('../Image/Horizontal.avif');">
         <div class="slider-wrapper">
-            <div class="product-card">
-                <img src="/Image/Lussa/logominimal.avif" alt="Imagem do Produto">
+            <div class="product-card" >
+                <img src="/Image/Lussa/logominimal.avif" alt="Imagem do Produto"width="250px" height="160px">
                 <div class="product-content">
                     <h3>Lussa</h3>
                     <p>Lussa: The Final Frontier is a WEB3-oriented NFT PC / Mobile / Console game for real game lovers, enhanced with new dynamics and realistic graphics.</p>
                 </div>
             </div>
             <div class="product-card">
-                <img src="/Image/NovoPangea/Novopangea_logo_08c853103e.webp" alt="Imagem do Produto">
+                <img src="/Image/NovoPangea/Novopangea_logo_08c853103e.webp" alt="Imagem do Produto"width="250px" height="160px">
                 <div class="product-content">
                     <h3>Novo Pangea</h3>
                     <p>Novopangea is a multi-player economy style strategy game. The game is designed around real world mechanics such as renting land, owning a business and completing jobs.</p>
                 </div>
             </div>
             <div class="product-card">
-                <img src="/Image/DeDos.webp" alt="Imagem do Produto">
+                <img src="../Image/DeDos.webp" alt="Imagem do Produto"width="250px" height="160px">
                 <div class="product-content">
                     <h3>Dedos</h3>
                  <p>Tabletop game made with Unity. Compatible with web and mobile devices.</p>
                 </div>
             </div>
             <div class="product-card">
-                <img src="/Image/cat.avif" alt="Imagem do Produto">
+                <img src="../Image/cat.avif" alt="Imagem do Produto"width="250px" height="160px">
                 <div class="product-content">
                     <h3>Chomp Chomp™</h3>
                     <p>CHOMP CHOMP™ is a falling blocks puzzle game, where the player must connect blocks of animals and food. When an animal is matched with its favorite food, he starts eating the food, this also makes random blocks fall into the opponent game board. </p>
@@ -316,7 +315,7 @@
     <h2>What our customers say</h2>
     <div class="review-mobile-slider"  style="background-image: url('/Image/Horizontal.avif');">
         <div class="slider-wrapper">
-            <div class="review-mobile-card" >
+            <div class="review-mobile-card">
                 <h3>Awesome team - <strong>Radu Muresan</strong> </h3>
                 <p>2024/10/30</p>
                         <p>Tiago and the team helped us with our burning project, they jumped right in and in less then one day they were fixing issues. 
@@ -373,7 +372,7 @@
                     </div>
              
 
-                    <div class="review-mobile-card" >
+                    <div class="review-mobile-card">
                         <h3>Loved Brainstorming with him - <strong>Leonard Scheidemantel</strong> </h3>
                         <p>2022/03/22</p>
                                 <p>Tiago is great to work with. He has a lot of knowledge from different areas and incorporates them all into the project.
@@ -390,7 +389,7 @@
                             </div>
                     
 
-                            <div class="review-mobile-card" >
+                            <div class="review-mobile-card">
                                 <h3>Excellent work - <strong>Filipe Oliveira Oliveira</strong> </h3>
                                 <p>2021/10/22</p>
                                         <p>Great experience. Quick and efficient work under a tight schedule and short period of time.</p>
@@ -615,13 +614,11 @@
             document.getElementById("currentYear").textContent = new Date().getFullYear();
         </script>
     </footer>
-
-        
-   <!-- Cookie Consent -->
+    <!-- Cookie Consent -->
 <!-- Banner de Consentimento de Cookies -->
 <div id="cookieBanner" >
     <div class ="cookie-banner">
-    <img src="/Image/shadowCookies.avif" alt="Logo" class="logo">
+    <img src="../Image/shadowCookies.avif" alt="Logo" class="logo">
     <p>This website uses cookies and related technologies for purposes that include website functionality, analytics, improved user experience, and advertising. You can choose to consent to our use of these technologies or manage your own preferences.</p>
 </div> 
 <div class ="cookie-button">
@@ -631,8 +628,9 @@
 </div>
 </div>
 
+<!-- Modal de Configurações de Cookies -->
 <div id="cookieSettingsModal">
-    <img src="/Image/shadowCookies.avif" alt="Logo" class="logo">
+    <img src="../Image/shadowCookies.avif" alt="Logo" class="logo">
     <h2>This website uses cookies</h2>
     <form id="cookieSettingsForm">
         <div class ="container"> <span class="switch-label">Strictly Essential</span>  <label class="switch" > <input type="checkbox" checked disabled name="essential" checked disabled> <span class="slider round"></span></label><br><br> </div>
@@ -644,12 +642,11 @@
     <button id="closeCookieSettings">Cancel</button>
 </div>
 
-
+<!-- Overlay para Modal -->
 <div id="modalOverlay"></div>
 
-
-<script defer src="/JS/cookies.js"></script>
-<script defer src="/JS/modal.js"></script>
+<script defer src="../JS/cookies.js"></script>
+<script defer src="../JS/modal.js"></script>
 
 </body>
 </html>
