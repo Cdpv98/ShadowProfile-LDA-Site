@@ -388,7 +388,7 @@ p {
 
 .about .about-content .text {
     flex: 1;
-    max-width: 550px;
+    max-width: 50%;
     text-align: start;
     text-justify: inter-word;
 }
