@@ -856,7 +856,7 @@ footer p {
     color: #cbe3ffbf;
 }
 
-button, .cta-btn, .game-card a, .review-mobile-card a , .about-content a {
+button, .cta-btn, .game-card a, .review-mobile-card a , .about-content .calltoaction a {
     background-color: #4971ce;
     border: none;
     color: #f0f7ffbf;
@@ -912,7 +912,7 @@ button:hover, .cta-btn:hover, .game-card a:hover {
 
     }
 
-    .cta-btn, .game-card a, .review-mobile-card a , .about-content a{
+    .cta-btn, .game-card a, .review-mobile-card a , .about-content .calltoaction a{
         background-color: #4971ce;
         border: none;
         margin-top: 15px;
