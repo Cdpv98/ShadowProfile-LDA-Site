@@ -856,7 +856,7 @@ footer p {
     color: #cbe3ffbf;
 }
 
-button, .cta-btn, .game-card a, .review-mobile-card a {
+button, .cta-btn, .game-card a, .review-mobile-card a , .about-content a {
     background-color: #4971ce;
     border: none;
     color: #f0f7ffbf;
@@ -912,7 +912,7 @@ button:hover, .cta-btn:hover, .game-card a:hover {
 
     }
 
-    .cta-btn, .game-card a, .review-mobile-card a {
+    .cta-btn, .game-card a, .review-mobile-card a , .about-content a{
         background-color: #4971ce;
         border: none;
         margin-top: 15px;
@@ -924,6 +924,12 @@ button:hover, .cta-btn:hover, .game-card a:hover {
         transition: box-shadow 0.3s ease, transform 0.2s ease;
         text-decoration: none;
 
+    }
+    .calltoaction a{
+        width: 80%;
+       
+        display: block;
+        flex-direction: column;
     }
 }
 
