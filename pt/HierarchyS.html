@@ -19,7 +19,6 @@
 
     <!-- Max 100 Words for the infos
     max 5 skills -->
-    
     <header class="header">
         <div class="logo">
            <img class="img" src="../Image/Shadow.webp"alt ="shadow Logo">
@@ -28,7 +27,15 @@
             <ul>
               
                 <li><a href="../pt/">INICIO</a></li>
-                <li><a href="../pt/Services.html">SERVIÇOS</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-dropdown>SERVIÇOS <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="../pt/UnityDevelopment.html">Desenvolvimento em Unity</a></li>
+                        <li><a href="../pt/UnrealDevelopment.html">Desenvolvimento em Unreal</a></li>
+                        <li><a href="../pt/NFTGames.html">Jogos NFT</a></li>
+                        <li><a href="../pt/WebDevelopment.html">Desenvolvimento Web</a></li>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-dropdown>JOGOS <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-content">
@@ -71,7 +78,17 @@
              <a href="javascript:void(0)" class ="space" aria-label="empty"></a>
              <a href="javascript:void(0)"class ="space"aria-label="empty"></a>
             <a href="../pt/">INICIO</a>
-            <a href="../pt/Services.html">SERVIÇOS</a>
+            <div class="dropdown-mobile">
+                <button class="dropbtn">SERVIÇOS
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-mobile-content">
+                  <a href="../pt/UnityDevelopment.html">Desenvolvimento em Unity</a>
+                  <a href="../pt/UnrealDevelopment.html">Desenvolvimento em Unreal</a>
+                  <a href="../pt/NFTGames.html">Jogos NFT</a>
+                  <a href="../pt/WebDevelopment.html">Desenvolvimento Web</a>
+                </div>
+              </div>
             <div class="dropdown-mobile">
               <button class="dropbtn">JOGOS
                 <i class="fas fa-chevron-down"></i>
@@ -111,7 +128,7 @@
                 <a href="https://discord.com/invite/VJ7PtAUv22" class="social-link-mobile"aria-label="disc"><i class="fab fa-discord"></i></a>
             </div>
     
-      
+  
             <a href="javascript:void(0);" class="icon" onclick="mobileMenu()" role="button" aria-label="Abrir menu"><p><i class="fa-solid fa-bars" style="color: #ffffff;"></i></p></a>
           </div>
         </header>
