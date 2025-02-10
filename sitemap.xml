@@ -7,7 +7,25 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.shadowprofile.pt/pt/Services.html</loc>
+    <loc>https://www.shadowprofile.pt/pt/UnityDevelopment.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.pt/pt/UnrealDevelopment.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.pt/pt/NFTGames.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.pt/pt/WebDevelopment.html</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>Weekly</changefreq>
     <priority>0.5</priority>
@@ -61,7 +79,25 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.shadowprofile.pt/en/Services.html</loc>
+    <loc>https://www.shadowprofile.pt/en/UnityDevelopment.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.pt/en/UnrealDevelopment.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.pt/en/NFTGames.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.pt/en/WebDevelopment.html</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>Weekly</changefreq>
     <priority>0.5</priority>
@@ -117,7 +153,25 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.shadowprofile.com/pt/Services.html</loc>
+    <loc>https://www.shadowprofile.com/pt/UnityDevelopment.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.com/pt/UnrealDevelopment.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.com/pt/NFTGames.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.com/pt/WebDevelopment.html</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>Weekly</changefreq>
     <priority>0.5</priority>
@@ -171,7 +225,25 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.shadowprofile.com/en/Services.html</loc>
+    <loc>https://www.shadowprofile.com/en/UnityDevelopment.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.com/en/UnrealDevelopment.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.com/en/NFTGames.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.com/en/WebDevelopment.html</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>Weekly</changefreq>
     <priority>0.5</priority>

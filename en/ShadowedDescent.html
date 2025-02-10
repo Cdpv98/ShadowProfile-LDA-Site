@@ -27,7 +27,14 @@
             <ul>
               
                 <li><a href="../en/">HOME</a></li>
-                <li><a href="../en/Services.html">SERVICES</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-dropdown>SERVICES <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="../en/UnityDevelopment.html">Unity Development</a></li>
+                        <li><a href="../en/UnrealDevelopment.html">Unreal Development</a></li>
+                        <li><a href="../en/NFTGames.html">NFT Games</a></li>
+                        <li><a href="../en/WebDevelopment.html">Web Development</a></li>
+                    </ul>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-dropdown>GAMES <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-content">
@@ -65,12 +72,23 @@
  
         <div class="topnav" id="myTopnav"> 
             <div class="logo">
-                <img class="img" src="../Image/Shadow.webp"alt ="shadow Logo">
+                <img class="img" src="../Image/Shadow.webp"alt ="img">
              </div>
              <a href="javascript:void(0)" class ="space" aria-label="empty"></a>
              <a href="javascript:void(0)"class ="space"aria-label="empty"></a>
             <a href="../en/">HOME</a>
-            <a href="../en/Services.html">SERVICES</a>
+          
+            <div class="dropdown-mobile">
+                <button class="dropbtn">SERVICES
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-mobile-content">
+                  <a href="../en/UnityDevelopment.html">Unity Development</a>
+                  <a href="../en/UnrealDevelopment.html">Unreal Development</a>
+                  <a href="../en/NFTGames.html">Nft Games</a>
+                  <a href="../en/WebDevelopment.html">Web Development</a>
+                </div>
+              </div>
             <div class="dropdown-mobile">
               <button class="dropbtn">GAMES
                 <i class="fas fa-chevron-down"></i>
@@ -78,6 +96,7 @@
               <div class="dropdown-mobile-content">
                 <a href="../en/RoyalWars.html">Royal Wars: Farm TD</a>
                 <a href="../en/ShadowedDescent.html">Shadowed Descent</a>
+            
               </div>
             </div>
     
@@ -87,7 +106,7 @@
                 </button>
                 <div class="dropdown-mobile-content">
                   <a href="../en/HierarchyS.html">HierarchyS</a>
-                  <a href="../en/LightingOccluder.html">Lighting Occluder</a>´
+                  <a href="../en/LightingOccluder.html">Lighting Occluder</a>
                   <a href="../en/DesignerToolS.html">Designer ToolS</a>
                   <a href="../en/UnDuplicate.html">UnDuplicate</a>
                 </div>
@@ -110,6 +129,7 @@
                 <a href="https://discord.com/invite/VJ7PtAUv22" class="social-link-mobile"aria-label="disc"><i class="fab fa-discord"></i></a>
             </div>
     
+        
             <a href="javascript:void(0);" class="icon" onclick="mobileMenu()" role="button" aria-label="Abrir menu"><p><i class="fa-solid fa-bars" style="color: #ffffff;"></i></p></a>
           </div>
         </header>
