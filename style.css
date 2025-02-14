@@ -458,7 +458,8 @@ p {
 }
 
 .about .about-content .image, .unity .about-content .image {
-    filter: drop-shadow(1px 10px 4px #05216d);
+ /*   filter: drop-shadow(1px 10px 4px #05216d);
+ */
     margin-top: 3%;
     margin-left: 10%;
 
@@ -1353,6 +1354,14 @@ body.modal-open {
 
 }
 
+#slider h2{
+    color: #ff7a20;
+    text-shadow: #ff0000 0em 0em 1.3em;
+    font-family: 'Alegreya', sans-serif;
+    text-align: left;
+
+    font-size: 2em;
+}
 .slides {
     display: flex;
     height: 100%;
