@@ -43,13 +43,52 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.shadowprofile.pt/pt/HierarchyS.html</loc>
+    <loc>https://www.shadowprofile.pt/pt/SHierarchy.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.pt/pt/Bundle.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.pt/pt/Sfavorite.html</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>Weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.shadowprofile.pt/pt/LightingOccluder.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.pt/pt/Tessela.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    </url>
+    <url>
+    <loc>https://www.shadowprofile.pt/en/Tessela.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    </url>
+    <url>
+    <loc>https://www.shadowprofile.pt/pt/UnDuplicate.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    </url>
+    <url>
+    <loc>https://www.shadowprofile.pt/en/UnDuplicate.html</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>Weekly</changefreq>
     <priority>0.5</priority>
@@ -115,7 +154,19 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.shadowprofile.pt/en/HierarchyS.html</loc>
+    <loc>https://www.shadowprofile.pt/en/SHierarchy.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.shadowprofile.pt/en/Bundle.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.shadowprofile.pt/en/Sfavorite.html</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>Weekly</changefreq>
     <priority>0.5</priority>
@@ -189,7 +240,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.shadowprofile.com/pt/HierarchyS.html</loc>
+    <loc>https://www.shadowprofile.com/pt/SHierarchy.html</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>Weekly</changefreq>
     <priority>0.5</priority>
@@ -261,7 +312,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.shadowprofile.com/en/HierarchyS.html</loc>
+    <loc>https://www.shadowprofile.com/en/SHierarchy.html</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>Weekly</changefreq>
     <priority>0.5</priority>
@@ -286,6 +337,13 @@
   </url>
     <url>
     <loc>https://www.shadowprofile.com/en/Contacts.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>Weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+    <url>
+    <loc>https://discord.com/invite/VJ7PtAUv22</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>Weekly</changefreq>
     <priority>0.5</priority>
